@@ -1,0 +1,4354 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="com.handson.basic.StudentsControllerTest" time="5.904" tests="5" errors="0" skipped="0" failures="1">
+  <properties>
+    <property name="awt.toolkit" value="sun.awt.X11.XToolkit"/>
+    <property name="java.specification.version" value="11"/>
+    <property name="sun.cpu.isalist" value=""/>
+    <property name="sun.jnu.encoding" value="UTF-8"/>
+    <property name="java.class.path" value="/root/work/chana-basicSpring/target/test-classes:/root/work/chana-basicSpring/target/classes:/root/.m2/repository/org/springframework/boot/spring-boot-starter-web/2.5.2/spring-boot-starter-web-2.5.2.jar:/root/.m2/repository/org/springframework/boot/spring-boot-starter/2.5.2/spring-boot-starter-2.5.2.jar:/root/.m2/repository/org/springframework/boot/spring-boot/2.5.2/spring-boot-2.5.2.jar:/root/.m2/repository/org/springframework/boot/spring-boot-autoconfigure/2.5.2/spring-boot-autoconfigure-2.5.2.jar:/root/.m2/repository/org/springframework/boot/spring-boot-starter-logging/2.5.2/spring-boot-starter-logging-2.5.2.jar:/root/.m2/repository/ch/qos/logback/logback-classic/1.2.3/logback-classic-1.2.3.jar:/root/.m2/repository/ch/qos/logback/logback-core/1.2.3/logback-core-1.2.3.jar:/root/.m2/repository/org/apache/logging/log4j/log4j-to-slf4j/2.14.1/log4j-to-slf4j-2.14.1.jar:/root/.m2/repository/org/apache/logging/log4j/log4j-api/2.14.1/log4j-api-2.14.1.jar:/root/.m2/repository/org/slf4j/jul-to-slf4j/1.7.31/jul-to-slf4j-1.7.31.jar:/root/.m2/repository/jakarta/annotation/jakarta.annotation-api/1.3.5/jakarta.annotation-api-1.3.5.jar:/root/.m2/repository/org/yaml/snakeyaml/1.28/snakeyaml-1.28.jar:/root/.m2/repository/org/springframework/boot/spring-boot-starter-json/2.5.2/spring-boot-starter-json-2.5.2.jar:/root/.m2/repository/com/fasterxml/jackson/datatype/jackson-datatype-jdk8/2.12.3/jackson-datatype-jdk8-2.12.3.jar:/root/.m2/repository/com/fasterxml/jackson/datatype/jackson-datatype-jsr310/2.12.3/jackson-datatype-jsr310-2.12.3.jar:/root/.m2/repository/com/fasterxml/jackson/module/jackson-module-parameter-names/2.12.3/jackson-module-parameter-names-2.12.3.jar:/root/.m2/repository/org/springframework/boot/spring-boot-starter-tomcat/2.5.2/spring-boot-starter-tomcat-2.5.2.jar:/root/.m2/repository/org/apache/tomcat/embed/tomcat-embed-core/9.0.48/tomcat-embed-core-9.0.48.jar:/root/.m2/repository/org/apache/tomcat/embed/tomcat-embed-el/9.0.48/tomcat-embed-el-9.0.48.jar:/root/.m2/repository/org/apache/tomcat/embed/tomcat-embed-websocket/9.0.48/tomcat-embed-websocket-9.0.48.jar:/root/.m2/repository/org/springframework/spring-web/5.3.8/spring-web-5.3.8.jar:/root/.m2/repository/org/springframework/spring-beans/5.3.8/spring-beans-5.3.8.jar:/root/.m2/repository/org/springframework/spring-webmvc/5.3.8/spring-webmvc-5.3.8.jar:/root/.m2/repository/org/springframework/spring-context/5.3.8/spring-context-5.3.8.jar:/root/.m2/repository/org/springframework/spring-expression/5.3.8/spring-expression-5.3.8.jar:/root/.m2/repository/org/springframework/boot/spring-boot-starter-test/2.5.2/spring-boot-starter-test-2.5.2.jar:/root/.m2/repository/org/springframework/boot/spring-boot-test/2.5.2/spring-boot-test-2.5.2.jar:/root/.m2/repository/org/springframework/boot/spring-boot-test-autoconfigure/2.5.2/spring-boot-test-autoconfigure-2.5.2.jar:/root/.m2/repository/com/jayway/jsonpath/json-path/2.5.0/json-path-2.5.0.jar:/root/.m2/repository/net/minidev/json-smart/2.4.7/json-smart-2.4.7.jar:/root/.m2/repository/net/minidev/accessors-smart/2.4.7/accessors-smart-2.4.7.jar:/root/.m2/repository/org/ow2/asm/asm/9.1/asm-9.1.jar:/root/.m2/repository/jakarta/xml/bind/jakarta.xml.bind-api/2.3.3/jakarta.xml.bind-api-2.3.3.jar:/root/.m2/repository/jakarta/activation/jakarta.activation-api/1.2.2/jakarta.activation-api-1.2.2.jar:/root/.m2/repository/org/assertj/assertj-core/3.19.0/assertj-core-3.19.0.jar:/root/.m2/repository/org/hamcrest/hamcrest/2.2/hamcrest-2.2.jar:/root/.m2/repository/org/junit/jupiter/junit-jupiter/5.7.2/junit-jupiter-5.7.2.jar:/root/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.7.2/junit-jupiter-api-5.7.2.jar:/root/.m2/repository/org/apiguardian/apiguardian-api/1.1.0/apiguardian-api-1.1.0.jar:/root/.m2/repository/org/opentest4j/opentest4j/1.2.0/opentest4j-1.2.0.jar:/root/.m2/repository/org/junit/platform/junit-platform-commons/1.7.2/junit-platform-commons-1.7.2.jar:/root/.m2/repository/org/junit/jupiter/junit-jupiter-params/5.7.2/junit-jupiter-params-5.7.2.jar:/root/.m2/repository/org/junit/jupiter/junit-jupiter-engine/5.7.2/junit-jupiter-engine-5.7.2.jar:/root/.m2/repository/org/junit/platform/junit-platform-engine/1.7.2/junit-platform-engine-1.7.2.jar:/root/.m2/repository/org/mockito/mockito-core/3.9.0/mockito-core-3.9.0.jar:/root/.m2/repository/net/bytebuddy/byte-buddy/1.10.22/byte-buddy-1.10.22.jar:/root/.m2/repository/net/bytebuddy/byte-buddy-agent/1.10.22/byte-buddy-agent-1.10.22.jar:/root/.m2/repository/org/objenesis/objenesis/3.2/objenesis-3.2.jar:/root/.m2/repository/org/mockito/mockito-junit-jupiter/3.9.0/mockito-junit-jupiter-3.9.0.jar:/root/.m2/repository/org/skyscreamer/jsonassert/1.5.0/jsonassert-1.5.0.jar:/root/.m2/repository/com/vaadin/external/google/android-json/0.0.20131108.vaadin1/android-json-0.0.20131108.vaadin1.jar:/root/.m2/repository/org/springframework/spring-core/5.3.8/spring-core-5.3.8.jar:/root/.m2/repository/org/springframework/spring-jcl/5.3.8/spring-jcl-5.3.8.jar:/root/.m2/repository/org/springframework/spring-test/5.3.8/spring-test-5.3.8.jar:/root/.m2/repository/org/xmlunit/xmlunit-core/2.8.2/xmlunit-core-2.8.2.jar:/root/.m2/repository/io/springfox/springfox-swagger-ui/2.6.1/springfox-swagger-ui-2.6.1.jar:/root/.m2/repository/io/springfox/springfox-spring-web/2.6.1/springfox-spring-web-2.6.1.jar:/root/.m2/repository/io/springfox/springfox-swagger2/2.6.1/springfox-swagger2-2.6.1.jar:/root/.m2/repository/io/swagger/swagger-annotations/1.5.10/swagger-annotations-1.5.10.jar:/root/.m2/repository/io/swagger/swagger-models/1.5.10/swagger-models-1.5.10.jar:/root/.m2/repository/io/springfox/springfox-spi/2.6.1/springfox-spi-2.6.1.jar:/root/.m2/repository/io/springfox/springfox-core/2.6.1/springfox-core-2.6.1.jar:/root/.m2/repository/io/springfox/springfox-schema/2.6.1/springfox-schema-2.6.1.jar:/root/.m2/repository/io/springfox/springfox-swagger-common/2.6.1/springfox-swagger-common-2.6.1.jar:/root/.m2/repository/com/google/guava/guava/18.0/guava-18.0.jar:/root/.m2/repository/com/fasterxml/classmate/1.5.1/classmate-1.5.1.jar:/root/.m2/repository/org/slf4j/slf4j-api/1.7.31/slf4j-api-1.7.31.jar:/root/.m2/repository/org/springframework/plugin/spring-plugin-core/1.2.0.RELEASE/spring-plugin-core-1.2.0.RELEASE.jar:/root/.m2/repository/org/springframework/plugin/spring-plugin-metadata/1.2.0.RELEASE/spring-plugin-metadata-1.2.0.RELEASE.jar:/root/.m2/repository/org/mapstruct/mapstruct/1.0.0.Final/mapstruct-1.0.0.Final.jar:/root/.m2/repository/org/springframework/boot/spring-boot-starter-data-jpa/2.5.2/spring-boot-starter-data-jpa-2.5.2.jar:/root/.m2/repository/org/springframework/boot/spring-boot-starter-aop/2.5.2/spring-boot-starter-aop-2.5.2.jar:/root/.m2/repository/org/aspectj/aspectjweaver/1.9.6/aspectjweaver-1.9.6.jar:/root/.m2/repository/org/springframework/boot/spring-boot-starter-jdbc/2.5.2/spring-boot-starter-jdbc-2.5.2.jar:/root/.m2/repository/com/zaxxer/HikariCP/4.0.3/HikariCP-4.0.3.jar:/root/.m2/repository/org/springframework/spring-jdbc/5.3.8/spring-jdbc-5.3.8.jar:/root/.m2/repository/jakarta/transaction/jakarta.transaction-api/1.3.3/jakarta.transaction-api-1.3.3.jar:/root/.m2/repository/jakarta/persistence/jakarta.persistence-api/2.2.3/jakarta.persistence-api-2.2.3.jar:/root/.m2/repository/org/hibernate/hibernate-core/5.4.32.Final/hibernate-core-5.4.32.Final.jar:/root/.m2/repository/org/javassist/javassist/3.27.0-GA/javassist-3.27.0-GA.jar:/root/.m2/repository/antlr/antlr/2.7.7/antlr-2.7.7.jar:/root/.m2/repository/org/jboss/jandex/2.2.3.Final/jandex-2.2.3.Final.jar:/root/.m2/repository/org/dom4j/dom4j/2.1.3/dom4j-2.1.3.jar:/root/.m2/repository/org/hibernate/common/hibernate-commons-annotations/5.1.2.Final/hibernate-commons-annotations-5.1.2.Final.jar:/root/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.4/jaxb-runtime-2.3.4.jar:/root/.m2/repository/org/glassfish/jaxb/txw2/2.3.4/txw2-2.3.4.jar:/root/.m2/repository/com/sun/istack/istack-commons-runtime/3.0.12/istack-commons-runtime-3.0.12.jar:/root/.m2/repository/com/sun/activation/jakarta.activation/1.2.2/jakarta.activation-1.2.2.jar:/root/.m2/repository/org/springframework/data/spring-data-jpa/2.5.2/spring-data-jpa-2.5.2.jar:/root/.m2/repository/org/springframework/data/spring-data-commons/2.5.2/spring-data-commons-2.5.2.jar:/root/.m2/repository/org/springframework/spring-orm/5.3.8/spring-orm-5.3.8.jar:/root/.m2/repository/org/springframework/spring-tx/5.3.8/spring-tx-5.3.8.jar:/root/.m2/repository/org/springframework/spring-aspects/5.3.8/spring-aspects-5.3.8.jar:/root/.m2/repository/org/postgresql/postgresql/42.2.22/postgresql-42.2.22.jar:/root/.m2/repository/org/checkerframework/checker-qual/3.5.0/checker-qual-3.5.0.jar:/root/.m2/repository/org/hibernate/validator/hibernate-validator/6.1.5.Final/hibernate-validator-6.1.5.Final.jar:/root/.m2/repository/jakarta/validation/jakarta.validation-api/2.0.2/jakarta.validation-api-2.0.2.jar:/root/.m2/repository/org/jboss/logging/jboss-logging/3.4.2.Final/jboss-logging-3.4.2.Final.jar:/root/.m2/repository/joda-time/joda-time/2.10.13/joda-time-2.10.13.jar:/root/.m2/repository/com/fasterxml/jackson/datatype/jackson-datatype-joda/2.12.3/jackson-datatype-joda-2.12.3.jar:/root/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.12.3/jackson-annotations-2.12.3.jar:/root/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.12.3/jackson-core-2.12.3.jar:/root/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.12.3/jackson-databind-2.12.3.jar:/root/.m2/repository/com/amazonaws/aws-java-sdk-s3/1.11.908/aws-java-sdk-s3-1.11.908.jar:/root/.m2/repository/com/amazonaws/aws-java-sdk-kms/1.11.908/aws-java-sdk-kms-1.11.908.jar:/root/.m2/repository/com/amazonaws/aws-java-sdk-core/1.11.908/aws-java-sdk-core-1.11.908.jar:/root/.m2/repository/commons-logging/commons-logging/1.1.3/commons-logging-1.1.3.jar:/root/.m2/repository/org/apache/httpcomponents/httpclient/4.5.13/httpclient-4.5.13.jar:/root/.m2/repository/org/apache/httpcomponents/httpcore/4.4.14/httpcore-4.4.14.jar:/root/.m2/repository/commons-codec/commons-codec/1.15/commons-codec-1.15.jar:/root/.m2/repository/software/amazon/ion/ion-java/1.0.2/ion-java-1.0.2.jar:/root/.m2/repository/com/fasterxml/jackson/dataformat/jackson-dataformat-cbor/2.12.3/jackson-dataformat-cbor-2.12.3.jar:/root/.m2/repository/com/amazonaws/jmespath-java/1.11.908/jmespath-java-1.11.908.jar:/root/.m2/repository/commons-io/commons-io/2.11.0/commons-io-2.11.0.jar:/root/.m2/repository/com/squareup/okhttp3/okhttp/4.8.1/okhttp-4.8.1.jar:/root/.m2/repository/com/squareup/okio/okio/2.7.0/okio-2.7.0.jar:/root/.m2/repository/org/jetbrains/kotlin/kotlin-stdlib-common/1.5.20/kotlin-stdlib-common-1.5.20.jar:/root/.m2/repository/org/jetbrains/kotlin/kotlin-stdlib/1.5.20/kotlin-stdlib-1.5.20.jar:/root/.m2/repository/org/jetbrains/annotations/13.0/annotations-13.0.jar:/root/.m2/repository/org/apache/commons/commons-collections4/4.4/commons-collections4-4.4.jar:/root/.m2/repository/io/jsonwebtoken/jjwt/0.9.1/jjwt-0.9.1.jar:/root/.m2/repository/org/springframework/boot/spring-boot-starter-security/2.5.2/spring-boot-starter-security-2.5.2.jar:/root/.m2/repository/org/springframework/spring-aop/5.3.8/spring-aop-5.3.8.jar:/root/.m2/repository/org/springframework/security/spring-security-config/5.5.1/spring-security-config-5.5.1.jar:/root/.m2/repository/org/springframework/security/spring-security-core/5.5.1/spring-security-core-5.5.1.jar:/root/.m2/repository/org/springframework/security/spring-security-crypto/5.5.1/spring-security-crypto-5.5.1.jar:/root/.m2/repository/org/springframework/security/spring-security-web/5.5.1/spring-security-web-5.5.1.jar:/root/.m2/repository/org/springframework/boot/spring-boot-starter-actuator/2.5.2/spring-boot-starter-actuator-2.5.2.jar:/root/.m2/repository/org/springframework/boot/spring-boot-actuator-autoconfigure/2.5.2/spring-boot-actuator-autoconfigure-2.5.2.jar:/root/.m2/repository/org/springframework/boot/spring-boot-actuator/2.5.2/spring-boot-actuator-2.5.2.jar:/root/.m2/repository/io/micrometer/micrometer-core/1.7.1/micrometer-core-1.7.1.jar:/root/.m2/repository/org/hdrhistogram/HdrHistogram/2.1.12/HdrHistogram-2.1.12.jar:/root/.m2/repository/org/latencyutils/LatencyUtils/2.0.3/LatencyUtils-2.0.3.jar:/root/.m2/repository/org/apache/commons/commons-lang3/3.4/commons-lang3-3.4.jar:/root/.m2/repository/junit/junit/4.12/junit-4.12.jar:/root/.m2/repository/org/hamcrest/hamcrest-core/2.2/hamcrest-core-2.2.jar:/root/.m2/repository/com/h2database/h2/1.4.200/h2-1.4.200.jar:"/>
+    <property name="java.vm.vendor" value="Amazon.com Inc."/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.vendor.url" value="https://aws.amazon.com/corretto/"/>
+    <property name="user.timezone" value=""/>
+    <property name="java.vm.specification.version" value="11"/>
+    <property name="os.name" value="Linux"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="user.country" value="US"/>
+    <property name="sun.boot.library.path" value="/root/.jdks/corretto-11.0.15/lib"/>
+    <property name="sun.java.command" value="/root/work/chana-basicSpring/target/surefire/surefirebooter16902131255118835451.jar /root/work/chana-basicSpring/target/surefire 2022-12-26T20-50-00_139-jvmRun1 surefire8415809280174928601tmp surefire_018287290593896623312tmp"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="surefire.test.class.path" value="/root/work/chana-basicSpring/target/test-classes:/root/work/chana-basicSpring/target/classes:/root/.m2/repository/org/springframework/boot/spring-boot-starter-web/2.5.2/spring-boot-starter-web-2.5.2.jar:/root/.m2/repository/org/springframework/boot/spring-boot-starter/2.5.2/spring-boot-starter-2.5.2.jar:/root/.m2/repository/org/springframework/boot/spring-boot/2.5.2/spring-boot-2.5.2.jar:/root/.m2/repository/org/springframework/boot/spring-boot-autoconfigure/2.5.2/spring-boot-autoconfigure-2.5.2.jar:/root/.m2/repository/org/springframework/boot/spring-boot-starter-logging/2.5.2/spring-boot-starter-logging-2.5.2.jar:/root/.m2/repository/ch/qos/logback/logback-classic/1.2.3/logback-classic-1.2.3.jar:/root/.m2/repository/ch/qos/logback/logback-core/1.2.3/logback-core-1.2.3.jar:/root/.m2/repository/org/apache/logging/log4j/log4j-to-slf4j/2.14.1/log4j-to-slf4j-2.14.1.jar:/root/.m2/repository/org/apache/logging/log4j/log4j-api/2.14.1/log4j-api-2.14.1.jar:/root/.m2/repository/org/slf4j/jul-to-slf4j/1.7.31/jul-to-slf4j-1.7.31.jar:/root/.m2/repository/jakarta/annotation/jakarta.annotation-api/1.3.5/jakarta.annotation-api-1.3.5.jar:/root/.m2/repository/org/yaml/snakeyaml/1.28/snakeyaml-1.28.jar:/root/.m2/repository/org/springframework/boot/spring-boot-starter-json/2.5.2/spring-boot-starter-json-2.5.2.jar:/root/.m2/repository/com/fasterxml/jackson/datatype/jackson-datatype-jdk8/2.12.3/jackson-datatype-jdk8-2.12.3.jar:/root/.m2/repository/com/fasterxml/jackson/datatype/jackson-datatype-jsr310/2.12.3/jackson-datatype-jsr310-2.12.3.jar:/root/.m2/repository/com/fasterxml/jackson/module/jackson-module-parameter-names/2.12.3/jackson-module-parameter-names-2.12.3.jar:/root/.m2/repository/org/springframework/boot/spring-boot-starter-tomcat/2.5.2/spring-boot-starter-tomcat-2.5.2.jar:/root/.m2/repository/org/apache/tomcat/embed/tomcat-embed-core/9.0.48/tomcat-embed-core-9.0.48.jar:/root/.m2/repository/org/apache/tomcat/embed/tomcat-embed-el/9.0.48/tomcat-embed-el-9.0.48.jar:/root/.m2/repository/org/apache/tomcat/embed/tomcat-embed-websocket/9.0.48/tomcat-embed-websocket-9.0.48.jar:/root/.m2/repository/org/springframework/spring-web/5.3.8/spring-web-5.3.8.jar:/root/.m2/repository/org/springframework/spring-beans/5.3.8/spring-beans-5.3.8.jar:/root/.m2/repository/org/springframework/spring-webmvc/5.3.8/spring-webmvc-5.3.8.jar:/root/.m2/repository/org/springframework/spring-context/5.3.8/spring-context-5.3.8.jar:/root/.m2/repository/org/springframework/spring-expression/5.3.8/spring-expression-5.3.8.jar:/root/.m2/repository/org/springframework/boot/spring-boot-starter-test/2.5.2/spring-boot-starter-test-2.5.2.jar:/root/.m2/repository/org/springframework/boot/spring-boot-test/2.5.2/spring-boot-test-2.5.2.jar:/root/.m2/repository/org/springframework/boot/spring-boot-test-autoconfigure/2.5.2/spring-boot-test-autoconfigure-2.5.2.jar:/root/.m2/repository/com/jayway/jsonpath/json-path/2.5.0/json-path-2.5.0.jar:/root/.m2/repository/net/minidev/json-smart/2.4.7/json-smart-2.4.7.jar:/root/.m2/repository/net/minidev/accessors-smart/2.4.7/accessors-smart-2.4.7.jar:/root/.m2/repository/org/ow2/asm/asm/9.1/asm-9.1.jar:/root/.m2/repository/jakarta/xml/bind/jakarta.xml.bind-api/2.3.3/jakarta.xml.bind-api-2.3.3.jar:/root/.m2/repository/jakarta/activation/jakarta.activation-api/1.2.2/jakarta.activation-api-1.2.2.jar:/root/.m2/repository/org/assertj/assertj-core/3.19.0/assertj-core-3.19.0.jar:/root/.m2/repository/org/hamcrest/hamcrest/2.2/hamcrest-2.2.jar:/root/.m2/repository/org/junit/jupiter/junit-jupiter/5.7.2/junit-jupiter-5.7.2.jar:/root/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.7.2/junit-jupiter-api-5.7.2.jar:/root/.m2/repository/org/apiguardian/apiguardian-api/1.1.0/apiguardian-api-1.1.0.jar:/root/.m2/repository/org/opentest4j/opentest4j/1.2.0/opentest4j-1.2.0.jar:/root/.m2/repository/org/junit/platform/junit-platform-commons/1.7.2/junit-platform-commons-1.7.2.jar:/root/.m2/repository/org/junit/jupiter/junit-jupiter-params/5.7.2/junit-jupiter-params-5.7.2.jar:/root/.m2/repository/org/junit/jupiter/junit-jupiter-engine/5.7.2/junit-jupiter-engine-5.7.2.jar:/root/.m2/repository/org/junit/platform/junit-platform-engine/1.7.2/junit-platform-engine-1.7.2.jar:/root/.m2/repository/org/mockito/mockito-core/3.9.0/mockito-core-3.9.0.jar:/root/.m2/repository/net/bytebuddy/byte-buddy/1.10.22/byte-buddy-1.10.22.jar:/root/.m2/repository/net/bytebuddy/byte-buddy-agent/1.10.22/byte-buddy-agent-1.10.22.jar:/root/.m2/repository/org/objenesis/objenesis/3.2/objenesis-3.2.jar:/root/.m2/repository/org/mockito/mockito-junit-jupiter/3.9.0/mockito-junit-jupiter-3.9.0.jar:/root/.m2/repository/org/skyscreamer/jsonassert/1.5.0/jsonassert-1.5.0.jar:/root/.m2/repository/com/vaadin/external/google/android-json/0.0.20131108.vaadin1/android-json-0.0.20131108.vaadin1.jar:/root/.m2/repository/org/springframework/spring-core/5.3.8/spring-core-5.3.8.jar:/root/.m2/repository/org/springframework/spring-jcl/5.3.8/spring-jcl-5.3.8.jar:/root/.m2/repository/org/springframework/spring-test/5.3.8/spring-test-5.3.8.jar:/root/.m2/repository/org/xmlunit/xmlunit-core/2.8.2/xmlunit-core-2.8.2.jar:/root/.m2/repository/io/springfox/springfox-swagger-ui/2.6.1/springfox-swagger-ui-2.6.1.jar:/root/.m2/repository/io/springfox/springfox-spring-web/2.6.1/springfox-spring-web-2.6.1.jar:/root/.m2/repository/io/springfox/springfox-swagger2/2.6.1/springfox-swagger2-2.6.1.jar:/root/.m2/repository/io/swagger/swagger-annotations/1.5.10/swagger-annotations-1.5.10.jar:/root/.m2/repository/io/swagger/swagger-models/1.5.10/swagger-models-1.5.10.jar:/root/.m2/repository/io/springfox/springfox-spi/2.6.1/springfox-spi-2.6.1.jar:/root/.m2/repository/io/springfox/springfox-core/2.6.1/springfox-core-2.6.1.jar:/root/.m2/repository/io/springfox/springfox-schema/2.6.1/springfox-schema-2.6.1.jar:/root/.m2/repository/io/springfox/springfox-swagger-common/2.6.1/springfox-swagger-common-2.6.1.jar:/root/.m2/repository/com/google/guava/guava/18.0/guava-18.0.jar:/root/.m2/repository/com/fasterxml/classmate/1.5.1/classmate-1.5.1.jar:/root/.m2/repository/org/slf4j/slf4j-api/1.7.31/slf4j-api-1.7.31.jar:/root/.m2/repository/org/springframework/plugin/spring-plugin-core/1.2.0.RELEASE/spring-plugin-core-1.2.0.RELEASE.jar:/root/.m2/repository/org/springframework/plugin/spring-plugin-metadata/1.2.0.RELEASE/spring-plugin-metadata-1.2.0.RELEASE.jar:/root/.m2/repository/org/mapstruct/mapstruct/1.0.0.Final/mapstruct-1.0.0.Final.jar:/root/.m2/repository/org/springframework/boot/spring-boot-starter-data-jpa/2.5.2/spring-boot-starter-data-jpa-2.5.2.jar:/root/.m2/repository/org/springframework/boot/spring-boot-starter-aop/2.5.2/spring-boot-starter-aop-2.5.2.jar:/root/.m2/repository/org/aspectj/aspectjweaver/1.9.6/aspectjweaver-1.9.6.jar:/root/.m2/repository/org/springframework/boot/spring-boot-starter-jdbc/2.5.2/spring-boot-starter-jdbc-2.5.2.jar:/root/.m2/repository/com/zaxxer/HikariCP/4.0.3/HikariCP-4.0.3.jar:/root/.m2/repository/org/springframework/spring-jdbc/5.3.8/spring-jdbc-5.3.8.jar:/root/.m2/repository/jakarta/transaction/jakarta.transaction-api/1.3.3/jakarta.transaction-api-1.3.3.jar:/root/.m2/repository/jakarta/persistence/jakarta.persistence-api/2.2.3/jakarta.persistence-api-2.2.3.jar:/root/.m2/repository/org/hibernate/hibernate-core/5.4.32.Final/hibernate-core-5.4.32.Final.jar:/root/.m2/repository/org/javassist/javassist/3.27.0-GA/javassist-3.27.0-GA.jar:/root/.m2/repository/antlr/antlr/2.7.7/antlr-2.7.7.jar:/root/.m2/repository/org/jboss/jandex/2.2.3.Final/jandex-2.2.3.Final.jar:/root/.m2/repository/org/dom4j/dom4j/2.1.3/dom4j-2.1.3.jar:/root/.m2/repository/org/hibernate/common/hibernate-commons-annotations/5.1.2.Final/hibernate-commons-annotations-5.1.2.Final.jar:/root/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.4/jaxb-runtime-2.3.4.jar:/root/.m2/repository/org/glassfish/jaxb/txw2/2.3.4/txw2-2.3.4.jar:/root/.m2/repository/com/sun/istack/istack-commons-runtime/3.0.12/istack-commons-runtime-3.0.12.jar:/root/.m2/repository/com/sun/activation/jakarta.activation/1.2.2/jakarta.activation-1.2.2.jar:/root/.m2/repository/org/springframework/data/spring-data-jpa/2.5.2/spring-data-jpa-2.5.2.jar:/root/.m2/repository/org/springframework/data/spring-data-commons/2.5.2/spring-data-commons-2.5.2.jar:/root/.m2/repository/org/springframework/spring-orm/5.3.8/spring-orm-5.3.8.jar:/root/.m2/repository/org/springframework/spring-tx/5.3.8/spring-tx-5.3.8.jar:/root/.m2/repository/org/springframework/spring-aspects/5.3.8/spring-aspects-5.3.8.jar:/root/.m2/repository/org/postgresql/postgresql/42.2.22/postgresql-42.2.22.jar:/root/.m2/repository/org/checkerframework/checker-qual/3.5.0/checker-qual-3.5.0.jar:/root/.m2/repository/org/hibernate/validator/hibernate-validator/6.1.5.Final/hibernate-validator-6.1.5.Final.jar:/root/.m2/repository/jakarta/validation/jakarta.validation-api/2.0.2/jakarta.validation-api-2.0.2.jar:/root/.m2/repository/org/jboss/logging/jboss-logging/3.4.2.Final/jboss-logging-3.4.2.Final.jar:/root/.m2/repository/joda-time/joda-time/2.10.13/joda-time-2.10.13.jar:/root/.m2/repository/com/fasterxml/jackson/datatype/jackson-datatype-joda/2.12.3/jackson-datatype-joda-2.12.3.jar:/root/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.12.3/jackson-annotations-2.12.3.jar:/root/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.12.3/jackson-core-2.12.3.jar:/root/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.12.3/jackson-databind-2.12.3.jar:/root/.m2/repository/com/amazonaws/aws-java-sdk-s3/1.11.908/aws-java-sdk-s3-1.11.908.jar:/root/.m2/repository/com/amazonaws/aws-java-sdk-kms/1.11.908/aws-java-sdk-kms-1.11.908.jar:/root/.m2/repository/com/amazonaws/aws-java-sdk-core/1.11.908/aws-java-sdk-core-1.11.908.jar:/root/.m2/repository/commons-logging/commons-logging/1.1.3/commons-logging-1.1.3.jar:/root/.m2/repository/org/apache/httpcomponents/httpclient/4.5.13/httpclient-4.5.13.jar:/root/.m2/repository/org/apache/httpcomponents/httpcore/4.4.14/httpcore-4.4.14.jar:/root/.m2/repository/commons-codec/commons-codec/1.15/commons-codec-1.15.jar:/root/.m2/repository/software/amazon/ion/ion-java/1.0.2/ion-java-1.0.2.jar:/root/.m2/repository/com/fasterxml/jackson/dataformat/jackson-dataformat-cbor/2.12.3/jackson-dataformat-cbor-2.12.3.jar:/root/.m2/repository/com/amazonaws/jmespath-java/1.11.908/jmespath-java-1.11.908.jar:/root/.m2/repository/commons-io/commons-io/2.11.0/commons-io-2.11.0.jar:/root/.m2/repository/com/squareup/okhttp3/okhttp/4.8.1/okhttp-4.8.1.jar:/root/.m2/repository/com/squareup/okio/okio/2.7.0/okio-2.7.0.jar:/root/.m2/repository/org/jetbrains/kotlin/kotlin-stdlib-common/1.5.20/kotlin-stdlib-common-1.5.20.jar:/root/.m2/repository/org/jetbrains/kotlin/kotlin-stdlib/1.5.20/kotlin-stdlib-1.5.20.jar:/root/.m2/repository/org/jetbrains/annotations/13.0/annotations-13.0.jar:/root/.m2/repository/org/apache/commons/commons-collections4/4.4/commons-collections4-4.4.jar:/root/.m2/repository/io/jsonwebtoken/jjwt/0.9.1/jjwt-0.9.1.jar:/root/.m2/repository/org/springframework/boot/spring-boot-starter-security/2.5.2/spring-boot-starter-security-2.5.2.jar:/root/.m2/repository/org/springframework/spring-aop/5.3.8/spring-aop-5.3.8.jar:/root/.m2/repository/org/springframework/security/spring-security-config/5.5.1/spring-security-config-5.5.1.jar:/root/.m2/repository/org/springframework/security/spring-security-core/5.5.1/spring-security-core-5.5.1.jar:/root/.m2/repository/org/springframework/security/spring-security-crypto/5.5.1/spring-security-crypto-5.5.1.jar:/root/.m2/repository/org/springframework/security/spring-security-web/5.5.1/spring-security-web-5.5.1.jar:/root/.m2/repository/org/springframework/boot/spring-boot-starter-actuator/2.5.2/spring-boot-starter-actuator-2.5.2.jar:/root/.m2/repository/org/springframework/boot/spring-boot-actuator-autoconfigure/2.5.2/spring-boot-actuator-autoconfigure-2.5.2.jar:/root/.m2/repository/org/springframework/boot/spring-boot-actuator/2.5.2/spring-boot-actuator-2.5.2.jar:/root/.m2/repository/io/micrometer/micrometer-core/1.7.1/micrometer-core-1.7.1.jar:/root/.m2/repository/org/hdrhistogram/HdrHistogram/2.1.12/HdrHistogram-2.1.12.jar:/root/.m2/repository/org/latencyutils/LatencyUtils/2.0.3/LatencyUtils-2.0.3.jar:/root/.m2/repository/org/apache/commons/commons-lang3/3.4/commons-lang3-3.4.jar:/root/.m2/repository/junit/junit/4.12/junit-4.12.jar:/root/.m2/repository/org/hamcrest/hamcrest-core/2.2/hamcrest-core-2.2.jar:/root/.m2/repository/com/h2database/h2/1.4.200/h2-1.4.200.jar:"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="/root"/>
+    <property name="user.language" value="en"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.version.date" value="2022-04-19"/>
+    <property name="java.home" value="/root/.jdks/corretto-11.0.15"/>
+    <property name="file.separator" value="/"/>
+    <property name="basedir" value="/root/work/chana-basicSpring"/>
+    <property name="java.vm.compressedOopsMode" value="32-bit"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.X11GraphicsEnvironment"/>
+    <property name="surefire.real.class.path" value="/root/work/chana-basicSpring/target/surefire/surefirebooter16902131255118835451.jar"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="java.runtime.version" value="11.0.15+9-LTS"/>
+    <property name="user.name" value="root"/>
+    <property name="path.separator" value=":"/>
+    <property name="os.version" value="5.10.0-19-amd64"/>
+    <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
+    <property name="java.vendor.version" value="Corretto-11.0.15.9.1"/>
+    <property name="localRepository" value="/root/.m2/repository"/>
+    <property name="java.vendor.url.bug" value="https://github.com/corretto/corretto-11/issues/"/>
+    <property name="java.io.tmpdir" value="/tmp"/>
+    <property name="idea.version" value="2022.3"/>
+    <property name="java.version" value="11.0.15"/>
+    <property name="user.dir" value="/root/work/chana-basicSpring"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="java.awt.printerjob" value="sun.print.PSPrinterJob"/>
+    <property name="sun.os.patch.level" value="unknown"/>
+    <property name="java.library.path" value="/usr/java/packages/lib:/usr/lib64:/lib64:/lib:/usr/lib"/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.vendor" value="Amazon.com Inc."/>
+    <property name="java.vm.version" value="11.0.15+9-LTS"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="java.class.version" value="55.0"/>
+  </properties>
+  <testcase name="checkSmsSent" classname="com.handson.basic.StudentsControllerTest" time="1.223">
+    <failure message="&#10;Wanted but not invoked:&#10;smsService.send(&lt;any&gt;, &lt;any&gt;);&#10;-&gt; at com.handson.basic.StudentsControllerTest.checkSmsSent(StudentsControllerTest.java:76)&#10;Actually, there were zero interactions with this mock.&#10;" type="org.mockito.exceptions.verification.WantedButNotInvoked"><![CDATA[org.mockito.exceptions.verification.WantedButNotInvoked: 
+
+Wanted but not invoked:
+smsService.send(<any>, <any>);
+-> at com.handson.basic.StudentsControllerTest.checkSmsSent(StudentsControllerTest.java:76)
+Actually, there were zero interactions with this mock.
+
+	at com.handson.basic.StudentsControllerTest.checkSmsSent(StudentsControllerTest.java:76)
+]]></failure>
+    <system-out><![CDATA[2022-12-26 20:50:08.006  INFO 145868 --- [           main] o.s.t.c.support.AbstractContextLoader    : Could not detect default resource locations for test class [com.handson.basic.StudentsControllerTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+2022-12-26 20:50:08.012  INFO 145868 --- [           main] .b.t.c.SpringBootTestContextBootstrapper : Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.event.ApplicationEventsTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+2022-12-26 20:50:08.013  INFO 145868 --- [           main] .b.t.c.SpringBootTestContextBootstrapper : Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@f4cfc61, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@64d7737c, org.springframework.test.context.event.ApplicationEventsTestExecutionListener@b632594, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@4c822e9b, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@24456c9e, org.springframework.test.context.support.DirtiesContextTestExecutionListener@7bd6a7f9, org.springframework.test.context.transaction.TransactionalTestExecutionListener@690b6292, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@34207fde, org.springframework.test.context.event.EventPublishingTestExecutionListener@3b8ec458, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@75a955bf, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@4704b66a, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@70edffdb, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@3d8c499a, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@2b7e739, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener@60e2b6e3]
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v2.5.2)
+
+2022-12-26 20:50:08.079  INFO 145868 --- [           main] c.handson.basic.StudentsControllerTest   : Starting StudentsControllerTest using Java 11.0.15 on 211 with PID 145868 (started by root in /root/work/chana-basicSpring)
+2022-12-26 20:50:08.079  INFO 145868 --- [           main] c.handson.basic.StudentsControllerTest   : The following profiles are active: test
+2022-12-26 20:50:08.399  INFO 145868 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-12-26 20:50:08.410  INFO 145868 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 9 ms. Found 3 JPA repository interfaces.
+2022-12-26 20:50:08.491  INFO 145868 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@381c78ea' of type [org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-12-26 20:50:08.499  INFO 145868 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-12-26 20:50:08.562  INFO 145868 --- [           main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-12-26 20:50:08.566  INFO 145868 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Starting...
+2022-12-26 20:50:08 database: opening /root/test (build 200)
+2022-12-26 20:50:08 fileLock: load {}
+2022-12-26 20:50:08 fileLock: save {method=file, id=1854fc54d9539c48584a80bd7a287339ae5a4390d14}
+2022-12-26 20:50:08 fileLock: load {method=file, id=1854fc54d9539c48584a80bd7a287339ae5a4390d14}
+2022-12-26 20:50:10 fileLock: save {server=0.0.0.211:43107, hostName=0.0.0.211, method=file, id=1854fc54d9539c48584a80bd7a287339ae5a4390d14}
+2022-12-26 20:50:10 lock: 1 exclusive write lock requesting for SYS 
+2022-12-26 20:50:10 lock: 1 exclusive write lock added for SYS 
+2022-12-26 20:50:10 lock: 1 exclusive write lock unlock SYS 
+2022-12-26 20:50:10 lock: 1 exclusive write lock requesting for SYS 
+2022-12-26 20:50:10 lock: 1 exclusive write lock added for SYS 
+2022-12-26 20:50:10 lock: 1 exclusive write lock unlock SYS 
+2022-12-26 20:50:10 database: opened /root/test
+2022-12-26 20:50:10 lock: 1 exclusive write lock requesting for SYS 
+2022-12-26 20:50:10 lock: 1 exclusive write lock added for SYS 
+2022-12-26 20:50:10 lock: 1 exclusive write lock unlock SYS 
+2022-12-26 20:50:10 database: connecting session #3 to /root/test
+2022-12-26 20:50:10 lock: 3 exclusive write lock requesting for SYS 
+2022-12-26 20:50:10 lock: 3 exclusive write lock added for SYS 
+2022-12-26 20:50:10 jdbc[3]: 
+/*SQL */SET DB_CLOSE_DELAY -1;
+2022-12-26 20:50:10 lock: 3 exclusive write lock unlock SYS 
+2022-12-26 20:50:10 jdbc[3]: 
+/*SQL */SET AUTO_SERVER TRUE;
+2022-12-26 20:50:10 jdbc[3]: 
+/*SQL */SET TRACE_LEVEL_SYSTEM_OUT 3;
+2022-12-26 20:50:10 jdbc[3]: 
+/*SQL */SET TRACE_LEVEL_FILE 3;
+2022-12-26 20:50:10 lock: 3 exclusive write lock requesting for SYS 
+2022-12-26 20:50:10 lock: 3 exclusive write lock added for SYS 
+2022-12-26 20:50:10 jdbc[3]: 
+/*SQL */SET IGNORECASE TRUE;
+2022-12-26 20:50:10 lock: 3 exclusive write lock unlock SYS 
+2022-12-26 20:50:10 jdbc[3]: 
+/**/Connection conn1 = DriverManager.getConnection("jdbc:h2:~/test;DB_CLOSE_DELAY=-1;TRACE_LEVEL_FILE=3;TRACE_LEVEL_SYSTEM_OUT=3;IGNORECASE=TRUE;AUTO_SERVER=TRUE", "SA", "");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/conn1.isReadOnly();
+2022-12-26 20:50:10 jdbc[3]: 
+/*SQL #:1*/CALL READONLY();
+2022-12-26 20:50:10 jdbc[3]: 
+/**/conn1.getAutoCommit();
+2022-12-26 20:50:10 jdbc[3]: 
+/**/conn1.isValid(1);
+2022-12-26 20:50:10 jdbc[3]: 
+/**/conn1.getTransactionIsolation();
+2022-12-26 20:50:10 jdbc[3]: 
+/**/conn1.getTransactionIsolation();
+2022-12-26 20:50:10.856  INFO 145868 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Start completed.
+2022-12-26 20:50:10 jdbc[3]: 
+/**/DatabaseMetaData dbMeta0 = conn1.getMetaData();
+2022-12-26 20:50:10.859  INFO 145868 --- [           main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2022-12-26 20:50:10 jdbc[3]: 
+/**/dbMeta0.supportsCatalogsInTableDefinitions();
+2022-12-26 20:50:10 jdbc[3]: 
+/**/dbMeta0.supportsSchemasInTableDefinitions();
+2022-12-26 20:50:10 jdbc[3]: 
+/**/dbMeta0.storesLowerCaseIdentifiers();
+2022-12-26 20:50:10 jdbc[3]: 
+/**/PreparedStatement prep2 = conn1.prepareStatement("SELECT NAME, VALUE FROM INFORMATION_SCHEMA.SETTINGS WHERE NAME IN (?, ?, ?, ?)");
+2022-12-26 20:50:10 jdbc[3]: Plan       : calculate cost for plan [SETTINGS:-7:org.h2.table.MetaTable@5a79e98e]
+2022-12-26 20:50:10 jdbc[3]: Plan       :   for table filter SETTINGS:-7:org.h2.table.MetaTable@5a79e98e
+2022-12-26 20:50:10 jdbc[3]: Table      :     potential plan item cost 10,000 index meta
+2022-12-26 20:50:10 jdbc[3]: Plan       :   best plan item cost 9,900 index meta
+2022-12-26 20:50:10 jdbc[3]: Plan       : plan cost 9,901
+2022-12-26 20:50:10 jdbc[3]: 
+/**/prep2.setString(1, "MODE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/prep2.setString(2, "DATABASE_TO_UPPER");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/prep2.setString(3, "DATABASE_TO_LOWER");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/prep2.setString(4, "CASE_INSENSITIVE_IDENTIFIERS");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/ResultSet rs2 = prep2.executeQuery();
+2022-12-26 20:50:10 jdbc[3]: 
+/*SQL l:78 #:4 t:2*/SELECT NAME, VALUE FROM INFORMATION_SCHEMA.SETTINGS WHERE NAME IN (?, ?, ?, ?) {1: 'MODE', 2: 'DATABASE_TO_UPPER', 3: 'DATABASE_TO_LOWER', 4: 'CASE_INSENSITIVE_IDENTIFIERS'};
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs2.next();
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs2.getString(2);
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs2.getString(1);
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs2.next();
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs2.getString(2);
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs2.getString(1);
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs2.next();
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs2.getString(2);
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs2.getString(1);
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs2.next();
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs2.getString(2);
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs2.getString(1);
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs2.next();
+2022-12-26 20:50:10 jdbc[3]: 
+/**/prep2.close();
+2022-12-26 20:50:10 jdbc[3]: 
+/**/dbMeta0.storesUpperCaseIdentifiers();
+2022-12-26 20:50:10 jdbc[3]: 
+/**/dbMeta0.storesMixedCaseIdentifiers();
+2022-12-26 20:50:10 jdbc[3]: 
+/**/dbMeta0.storesUpperCaseIdentifiers();
+2022-12-26 20:50:10 jdbc[3]: 
+/**/dbMeta0.storesLowerCaseQuotedIdentifiers();
+2022-12-26 20:50:10 jdbc[3]: 
+/**/dbMeta0.storesUpperCaseQuotedIdentifiers();
+2022-12-26 20:50:10 jdbc[3]: 
+/**/dbMeta0.storesMixedCaseQuotedIdentifiers();
+2022-12-26 20:50:10 jdbc[3]: 
+/**/dbMeta0.getSQLKeywords();
+2022-12-26 20:50:10 jdbc[3]: 
+/**/conn1.getCatalog();
+2022-12-26 20:50:10 jdbc[3]: 
+/*SQL #:1*/CALL DATABASE();
+2022-12-26 20:50:10 jdbc[3]: 
+/**/dbMeta0.supportsNamedParameters();
+2022-12-26 20:50:10 jdbc[3]: 
+/**/dbMeta0.supportsResultSetType(1004);
+2022-12-26 20:50:10 jdbc[3]: 
+/**/dbMeta0.supportsGetGeneratedKeys();
+2022-12-26 20:50:10 jdbc[3]: 
+/**/dbMeta0.supportsBatchUpdates();
+2022-12-26 20:50:10 jdbc[3]: 
+/**/dbMeta0.dataDefinitionIgnoredInTransactions();
+2022-12-26 20:50:10 jdbc[3]: 
+/**/dbMeta0.dataDefinitionCausesTransactionCommit();
+2022-12-26 20:50:10 jdbc[3]: 
+/**/dbMeta0.getSQLKeywords();
+2022-12-26 20:50:10 jdbc[3]: 
+/**/dbMeta0.getSQLStateType();
+2022-12-26 20:50:10 jdbc[3]: 
+/**/dbMeta0.locatorsUpdateCopy();
+2022-12-26 20:50:10 jdbc[3]: 
+/**/dbMeta0.getTypeInfo();
+2022-12-26 20:50:10 jdbc[3]: 
+/**/PreparedStatement prep3 = conn1.prepareStatement("SELECT TYPE_NAME, DATA_TYPE, PRECISION, PREFIX LITERAL_PREFIX, SUFFIX LITERAL_SUFFIX, PARAMS CREATE_PARAMS, NULLABLE, CASE_SENSITIVE, SEARCHABLE, FALSE UNSIGNED_ATTRIBUTE, FALSE FIXED_PREC_SCALE, AUTO_INCREMENT, TYPE_NAME LOCAL_TYPE_NAME, MINIMUM_SCALE, MAXIMUM_SCALE, DATA_TYPE SQL_DATA_TYPE, ZERO() SQL_DATETIME_SUB, RADIX NUM_PREC_RADIX FROM INFORMATION_SCHEMA.TYPE_INFO ORDER BY DATA_TYPE, POS");
+2022-12-26 20:50:10 jdbc[3]: Plan       : calculate cost for plan [TYPE_INFO:-5:org.h2.table.MetaTable@6e4dfd4d]
+2022-12-26 20:50:10 jdbc[3]: Plan       :   for table filter TYPE_INFO:-5:org.h2.table.MetaTable@6e4dfd4d
+2022-12-26 20:50:10 jdbc[3]: Table      :     potential plan item cost 10,000 index meta
+2022-12-26 20:50:10 jdbc[3]: Plan       :   best plan item cost 10,000 index meta
+2022-12-26 20:50:10 jdbc[3]: Plan       : plan cost 10,001
+2022-12-26 20:50:10 jdbc[3]: 
+/**/ResultSet rs3 = prep3.executeQuery();
+2022-12-26 20:50:10 jdbc[3]: 
+/*SQL #:46 t:1*/SELECT TYPE_NAME, DATA_TYPE, PRECISION, PREFIX LITERAL_PREFIX, SUFFIX LITERAL_SUFFIX, PARAMS CREATE_PARAMS, NULLABLE, CASE_SENSITIVE, SEARCHABLE, FALSE UNSIGNED_ATTRIBUTE, FALSE FIXED_PREC_SCALE, AUTO_INCREMENT, TYPE_NAME LOCAL_TYPE_NAME, MINIMUM_SCALE, MAXIMUM_SCALE, DATA_TYPE SQL_DATA_TYPE, ZERO() SQL_DATETIME_SUB, RADIX NUM_PREC_RADIX FROM INFORMATION_SCHEMA.TYPE_INFO ORDER BY DATA_TYPE, POS;
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.getStatement();
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.next();
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.getString("TYPE_NAME");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.getInt("DATA_TYPE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.getString("CREATE_PARAMS");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.getBoolean("UNSIGNED_ATTRIBUTE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.getInt("PRECISION");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.getShort("MINIMUM_SCALE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.getShort("MAXIMUM_SCALE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.getBoolean("FIXED_PREC_SCALE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.getString("LITERAL_PREFIX");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.getString("LITERAL_SUFFIX");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.getBoolean("CASE_SENSITIVE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.getShort("SEARCHABLE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.getShort("NULLABLE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.next();
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.getString("TYPE_NAME");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.getInt("DATA_TYPE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.getString("CREATE_PARAMS");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.getBoolean("UNSIGNED_ATTRIBUTE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.getInt("PRECISION");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.getShort("MINIMUM_SCALE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.getShort("MAXIMUM_SCALE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.getBoolean("FIXED_PREC_SCALE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.getString("LITERAL_PREFIX");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.getString("LITERAL_SUFFIX");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.getBoolean("CASE_SENSITIVE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.getShort("SEARCHABLE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.getShort("NULLABLE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.next();
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.getString("TYPE_NAME");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.getInt("DATA_TYPE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.getString("CREATE_PARAMS");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.getBoolean("UNSIGNED_ATTRIBUTE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.getInt("PRECISION");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.getShort("MINIMUM_SCALE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.getShort("MAXIMUM_SCALE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.getBoolean("FIXED_PREC_SCALE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.getString("LITERAL_PREFIX");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.getString("LITERAL_SUFFIX");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.getBoolean("CASE_SENSITIVE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.getShort("SEARCHABLE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.getShort("NULLABLE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.next();
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.getString("TYPE_NAME");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.getInt("DATA_TYPE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.getString("CREATE_PARAMS");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.getBoolean("UNSIGNED_ATTRIBUTE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.getInt("PRECISION");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.getShort("MINIMUM_SCALE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.getShort("MAXIMUM_SCALE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.getBoolean("FIXED_PREC_SCALE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.getString("LITERAL_PREFIX");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.getString("LITERAL_SUFFIX");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.getBoolean("CASE_SENSITIVE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.getShort("SEARCHABLE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.getShort("NULLABLE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.next();
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.getString("TYPE_NAME");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.getInt("DATA_TYPE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.getString("CREATE_PARAMS");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.getBoolean("UNSIGNED_ATTRIBUTE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.getInt("PRECISION");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.getShort("MINIMUM_SCALE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.getShort("MAXIMUM_SCALE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.getBoolean("FIXED_PREC_SCALE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.getString("LITERAL_PREFIX");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.getString("LITERAL_SUFFIX");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.getBoolean("CASE_SENSITIVE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.getShort("SEARCHABLE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.getShort("NULLABLE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.next();
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.getString("TYPE_NAME");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.getInt("DATA_TYPE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.getString("CREATE_PARAMS");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.getBoolean("UNSIGNED_ATTRIBUTE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.getInt("PRECISION");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.getShort("MINIMUM_SCALE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.getShort("MAXIMUM_SCALE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.getBoolean("FIXED_PREC_SCALE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.getString("LITERAL_PREFIX");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.getString("LITERAL_SUFFIX");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.getBoolean("CASE_SENSITIVE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.getShort("SEARCHABLE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.getShort("NULLABLE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.next();
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.getString("TYPE_NAME");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.getInt("DATA_TYPE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.getString("CREATE_PARAMS");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.getBoolean("UNSIGNED_ATTRIBUTE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.getInt("PRECISION");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.getShort("MINIMUM_SCALE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.getShort("MAXIMUM_SCALE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.getBoolean("FIXED_PREC_SCALE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.getString("LITERAL_PREFIX");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.getString("LITERAL_SUFFIX");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.getBoolean("CASE_SENSITIVE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.getShort("SEARCHABLE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.getShort("NULLABLE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.next();
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.getString("TYPE_NAME");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.getInt("DATA_TYPE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.getString("CREATE_PARAMS");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.getBoolean("UNSIGNED_ATTRIBUTE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.getInt("PRECISION");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.getShort("MINIMUM_SCALE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.getShort("MAXIMUM_SCALE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.getBoolean("FIXED_PREC_SCALE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.getString("LITERAL_PREFIX");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.getString("LITERAL_SUFFIX");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.getBoolean("CASE_SENSITIVE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.getShort("SEARCHABLE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.getShort("NULLABLE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.next();
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.getString("TYPE_NAME");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.getInt("DATA_TYPE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.getString("CREATE_PARAMS");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.getBoolean("UNSIGNED_ATTRIBUTE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.getInt("PRECISION");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.getShort("MINIMUM_SCALE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.getShort("MAXIMUM_SCALE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.getBoolean("FIXED_PREC_SCALE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.getString("LITERAL_PREFIX");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.getString("LITERAL_SUFFIX");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.getBoolean("CASE_SENSITIVE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.getShort("SEARCHABLE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.getShort("NULLABLE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.next();
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.getString("TYPE_NAME");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.getInt("DATA_TYPE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.getString("CREATE_PARAMS");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.getBoolean("UNSIGNED_ATTRIBUTE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.getInt("PRECISION");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.getShort("MINIMUM_SCALE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.getShort("MAXIMUM_SCALE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.getBoolean("FIXED_PREC_SCALE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.getString("LITERAL_PREFIX");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.getString("LITERAL_SUFFIX");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.getBoolean("CASE_SENSITIVE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.getShort("SEARCHABLE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.getShort("NULLABLE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.next();
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.getString("TYPE_NAME");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.getInt("DATA_TYPE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.getString("CREATE_PARAMS");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.getBoolean("UNSIGNED_ATTRIBUTE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.getInt("PRECISION");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.getShort("MINIMUM_SCALE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.getShort("MAXIMUM_SCALE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.getBoolean("FIXED_PREC_SCALE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.getString("LITERAL_PREFIX");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.getString("LITERAL_SUFFIX");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.getBoolean("CASE_SENSITIVE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.getShort("SEARCHABLE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.getShort("NULLABLE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.next();
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.getString("TYPE_NAME");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.getInt("DATA_TYPE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.getString("CREATE_PARAMS");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.getBoolean("UNSIGNED_ATTRIBUTE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.getInt("PRECISION");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.getShort("MINIMUM_SCALE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.getShort("MAXIMUM_SCALE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.getBoolean("FIXED_PREC_SCALE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.getString("LITERAL_PREFIX");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.getString("LITERAL_SUFFIX");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.getBoolean("CASE_SENSITIVE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.getShort("SEARCHABLE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.getShort("NULLABLE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.next();
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.getString("TYPE_NAME");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.getInt("DATA_TYPE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.getString("CREATE_PARAMS");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.getBoolean("UNSIGNED_ATTRIBUTE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.getInt("PRECISION");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.getShort("MINIMUM_SCALE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.getShort("MAXIMUM_SCALE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.getBoolean("FIXED_PREC_SCALE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.getString("LITERAL_PREFIX");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.getString("LITERAL_SUFFIX");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.getBoolean("CASE_SENSITIVE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.getShort("SEARCHABLE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.getShort("NULLABLE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.next();
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.getString("TYPE_NAME");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.getInt("DATA_TYPE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.getString("CREATE_PARAMS");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.getBoolean("UNSIGNED_ATTRIBUTE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.getInt("PRECISION");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.getShort("MINIMUM_SCALE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.getShort("MAXIMUM_SCALE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.getBoolean("FIXED_PREC_SCALE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.getString("LITERAL_PREFIX");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.getString("LITERAL_SUFFIX");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.getBoolean("CASE_SENSITIVE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.getShort("SEARCHABLE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.getShort("NULLABLE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.next();
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.getString("TYPE_NAME");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.getInt("DATA_TYPE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.getString("CREATE_PARAMS");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.getBoolean("UNSIGNED_ATTRIBUTE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.getInt("PRECISION");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.getShort("MINIMUM_SCALE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.getShort("MAXIMUM_SCALE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.getBoolean("FIXED_PREC_SCALE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.getString("LITERAL_PREFIX");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.getString("LITERAL_SUFFIX");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.getBoolean("CASE_SENSITIVE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.getShort("SEARCHABLE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.getShort("NULLABLE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.next();
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.getString("TYPE_NAME");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.getInt("DATA_TYPE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.getString("CREATE_PARAMS");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.getBoolean("UNSIGNED_ATTRIBUTE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.getInt("PRECISION");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.getShort("MINIMUM_SCALE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.getShort("MAXIMUM_SCALE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.getBoolean("FIXED_PREC_SCALE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.getString("LITERAL_PREFIX");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.getString("LITERAL_SUFFIX");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.getBoolean("CASE_SENSITIVE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.getShort("SEARCHABLE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.getShort("NULLABLE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.next();
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.getString("TYPE_NAME");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.getInt("DATA_TYPE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.getString("CREATE_PARAMS");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.getBoolean("UNSIGNED_ATTRIBUTE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.getInt("PRECISION");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.getShort("MINIMUM_SCALE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.getShort("MAXIMUM_SCALE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.getBoolean("FIXED_PREC_SCALE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.getString("LITERAL_PREFIX");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.getString("LITERAL_SUFFIX");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.getBoolean("CASE_SENSITIVE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.getShort("SEARCHABLE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.getShort("NULLABLE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.next();
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.getString("TYPE_NAME");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.getInt("DATA_TYPE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.getString("CREATE_PARAMS");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.getBoolean("UNSIGNED_ATTRIBUTE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.getInt("PRECISION");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.getShort("MINIMUM_SCALE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.getShort("MAXIMUM_SCALE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.getBoolean("FIXED_PREC_SCALE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.getString("LITERAL_PREFIX");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.getString("LITERAL_SUFFIX");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.getBoolean("CASE_SENSITIVE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.getShort("SEARCHABLE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.getShort("NULLABLE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.next();
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.getString("TYPE_NAME");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.getInt("DATA_TYPE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.getString("CREATE_PARAMS");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.getBoolean("UNSIGNED_ATTRIBUTE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.getInt("PRECISION");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.getShort("MINIMUM_SCALE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.getShort("MAXIMUM_SCALE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.getBoolean("FIXED_PREC_SCALE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.getString("LITERAL_PREFIX");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.getString("LITERAL_SUFFIX");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.getBoolean("CASE_SENSITIVE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.getShort("SEARCHABLE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.getShort("NULLABLE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.next();
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.getString("TYPE_NAME");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.getInt("DATA_TYPE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.getString("CREATE_PARAMS");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.getBoolean("UNSIGNED_ATTRIBUTE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.getInt("PRECISION");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.getShort("MINIMUM_SCALE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.getShort("MAXIMUM_SCALE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.getBoolean("FIXED_PREC_SCALE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.getString("LITERAL_PREFIX");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.getString("LITERAL_SUFFIX");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.getBoolean("CASE_SENSITIVE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.getShort("SEARCHABLE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.getShort("NULLABLE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.next();
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.getString("TYPE_NAME");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.getInt("DATA_TYPE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.getString("CREATE_PARAMS");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.getBoolean("UNSIGNED_ATTRIBUTE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.getInt("PRECISION");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.getShort("MINIMUM_SCALE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.getShort("MAXIMUM_SCALE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.getBoolean("FIXED_PREC_SCALE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.getString("LITERAL_PREFIX");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.getString("LITERAL_SUFFIX");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.getBoolean("CASE_SENSITIVE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.getShort("SEARCHABLE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.getShort("NULLABLE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.next();
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.getString("TYPE_NAME");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.getInt("DATA_TYPE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.getString("CREATE_PARAMS");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.getBoolean("UNSIGNED_ATTRIBUTE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.getInt("PRECISION");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.getShort("MINIMUM_SCALE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.getShort("MAXIMUM_SCALE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.getBoolean("FIXED_PREC_SCALE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.getString("LITERAL_PREFIX");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.getString("LITERAL_SUFFIX");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.getBoolean("CASE_SENSITIVE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.getShort("SEARCHABLE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.getShort("NULLABLE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.next();
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.getString("TYPE_NAME");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.getInt("DATA_TYPE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.getString("CREATE_PARAMS");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.getBoolean("UNSIGNED_ATTRIBUTE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.getInt("PRECISION");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.getShort("MINIMUM_SCALE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.getShort("MAXIMUM_SCALE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.getBoolean("FIXED_PREC_SCALE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.getString("LITERAL_PREFIX");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.getString("LITERAL_SUFFIX");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.getBoolean("CASE_SENSITIVE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.getShort("SEARCHABLE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.getShort("NULLABLE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.next();
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.getString("TYPE_NAME");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.getInt("DATA_TYPE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.getString("CREATE_PARAMS");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.getBoolean("UNSIGNED_ATTRIBUTE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.getInt("PRECISION");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.getShort("MINIMUM_SCALE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.getShort("MAXIMUM_SCALE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.getBoolean("FIXED_PREC_SCALE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.getString("LITERAL_PREFIX");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.getString("LITERAL_SUFFIX");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.getBoolean("CASE_SENSITIVE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.getShort("SEARCHABLE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.getShort("NULLABLE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.next();
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.getString("TYPE_NAME");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.getInt("DATA_TYPE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.getString("CREATE_PARAMS");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.getBoolean("UNSIGNED_ATTRIBUTE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.getInt("PRECISION");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.getShort("MINIMUM_SCALE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.getShort("MAXIMUM_SCALE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.getBoolean("FIXED_PREC_SCALE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.getString("LITERAL_PREFIX");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.getString("LITERAL_SUFFIX");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.getBoolean("CASE_SENSITIVE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.getShort("SEARCHABLE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.getShort("NULLABLE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.next();
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.getString("TYPE_NAME");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.getInt("DATA_TYPE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.getString("CREATE_PARAMS");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.getBoolean("UNSIGNED_ATTRIBUTE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.getInt("PRECISION");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.getShort("MINIMUM_SCALE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.getShort("MAXIMUM_SCALE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.getBoolean("FIXED_PREC_SCALE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.getString("LITERAL_PREFIX");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.getString("LITERAL_SUFFIX");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.getBoolean("CASE_SENSITIVE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.getShort("SEARCHABLE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.getShort("NULLABLE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.next();
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.getString("TYPE_NAME");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.getInt("DATA_TYPE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.getString("CREATE_PARAMS");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.getBoolean("UNSIGNED_ATTRIBUTE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.getInt("PRECISION");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.getShort("MINIMUM_SCALE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.getShort("MAXIMUM_SCALE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.getBoolean("FIXED_PREC_SCALE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.getString("LITERAL_PREFIX");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.getString("LITERAL_SUFFIX");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.getBoolean("CASE_SENSITIVE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.getShort("SEARCHABLE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.getShort("NULLABLE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.next();
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.getString("TYPE_NAME");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.getInt("DATA_TYPE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.getString("CREATE_PARAMS");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.getBoolean("UNSIGNED_ATTRIBUTE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.getInt("PRECISION");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.getShort("MINIMUM_SCALE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.getShort("MAXIMUM_SCALE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.getBoolean("FIXED_PREC_SCALE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.getString("LITERAL_PREFIX");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.getString("LITERAL_SUFFIX");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.getBoolean("CASE_SENSITIVE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.getShort("SEARCHABLE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.getShort("NULLABLE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.next();
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.getString("TYPE_NAME");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.getInt("DATA_TYPE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.getString("CREATE_PARAMS");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.getBoolean("UNSIGNED_ATTRIBUTE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.getInt("PRECISION");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.getShort("MINIMUM_SCALE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.getShort("MAXIMUM_SCALE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.getBoolean("FIXED_PREC_SCALE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.getString("LITERAL_PREFIX");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.getString("LITERAL_SUFFIX");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.getBoolean("CASE_SENSITIVE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.getShort("SEARCHABLE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.getShort("NULLABLE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.next();
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.getString("TYPE_NAME");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.getInt("DATA_TYPE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.getString("CREATE_PARAMS");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.getBoolean("UNSIGNED_ATTRIBUTE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.getInt("PRECISION");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.getShort("MINIMUM_SCALE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.getShort("MAXIMUM_SCALE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.getBoolean("FIXED_PREC_SCALE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.getString("LITERAL_PREFIX");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.getString("LITERAL_SUFFIX");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.getBoolean("CASE_SENSITIVE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.getShort("SEARCHABLE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.getShort("NULLABLE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.next();
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.getString("TYPE_NAME");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.getInt("DATA_TYPE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.getString("CREATE_PARAMS");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.getBoolean("UNSIGNED_ATTRIBUTE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.getInt("PRECISION");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.getShort("MINIMUM_SCALE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.getShort("MAXIMUM_SCALE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.getBoolean("FIXED_PREC_SCALE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.getString("LITERAL_PREFIX");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.getString("LITERAL_SUFFIX");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.getBoolean("CASE_SENSITIVE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.getShort("SEARCHABLE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.getShort("NULLABLE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.next();
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.getString("TYPE_NAME");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.getInt("DATA_TYPE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.getString("CREATE_PARAMS");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.getBoolean("UNSIGNED_ATTRIBUTE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.getInt("PRECISION");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.getShort("MINIMUM_SCALE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.getShort("MAXIMUM_SCALE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.getBoolean("FIXED_PREC_SCALE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.getString("LITERAL_PREFIX");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.getString("LITERAL_SUFFIX");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.getBoolean("CASE_SENSITIVE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.getShort("SEARCHABLE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.getShort("NULLABLE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.next();
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.getString("TYPE_NAME");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.getInt("DATA_TYPE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.getString("CREATE_PARAMS");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.getBoolean("UNSIGNED_ATTRIBUTE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.getInt("PRECISION");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.getShort("MINIMUM_SCALE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.getShort("MAXIMUM_SCALE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.getBoolean("FIXED_PREC_SCALE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.getString("LITERAL_PREFIX");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.getString("LITERAL_SUFFIX");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.getBoolean("CASE_SENSITIVE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.getShort("SEARCHABLE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.getShort("NULLABLE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.next();
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.getString("TYPE_NAME");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.getInt("DATA_TYPE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.getString("CREATE_PARAMS");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.getBoolean("UNSIGNED_ATTRIBUTE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.getInt("PRECISION");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.getShort("MINIMUM_SCALE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.getShort("MAXIMUM_SCALE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.getBoolean("FIXED_PREC_SCALE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.getString("LITERAL_PREFIX");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.getString("LITERAL_SUFFIX");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.getBoolean("CASE_SENSITIVE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.getShort("SEARCHABLE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.getShort("NULLABLE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.next();
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.getString("TYPE_NAME");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.getInt("DATA_TYPE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.getString("CREATE_PARAMS");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.getBoolean("UNSIGNED_ATTRIBUTE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.getInt("PRECISION");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.getShort("MINIMUM_SCALE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.getShort("MAXIMUM_SCALE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.getBoolean("FIXED_PREC_SCALE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.getString("LITERAL_PREFIX");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.getString("LITERAL_SUFFIX");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.getBoolean("CASE_SENSITIVE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.getShort("SEARCHABLE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.getShort("NULLABLE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.next();
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.getString("TYPE_NAME");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.getInt("DATA_TYPE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.getString("CREATE_PARAMS");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.getBoolean("UNSIGNED_ATTRIBUTE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.getInt("PRECISION");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.getShort("MINIMUM_SCALE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.getShort("MAXIMUM_SCALE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.getBoolean("FIXED_PREC_SCALE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.getString("LITERAL_PREFIX");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.getString("LITERAL_SUFFIX");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.getBoolean("CASE_SENSITIVE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.getShort("SEARCHABLE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.getShort("NULLABLE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.next();
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.getString("TYPE_NAME");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.getInt("DATA_TYPE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.getString("CREATE_PARAMS");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.getBoolean("UNSIGNED_ATTRIBUTE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.getInt("PRECISION");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.getShort("MINIMUM_SCALE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.getShort("MAXIMUM_SCALE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.getBoolean("FIXED_PREC_SCALE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.getString("LITERAL_PREFIX");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.getString("LITERAL_SUFFIX");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.getBoolean("CASE_SENSITIVE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.getShort("SEARCHABLE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.getShort("NULLABLE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.next();
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.getString("TYPE_NAME");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.getInt("DATA_TYPE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.getString("CREATE_PARAMS");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.getBoolean("UNSIGNED_ATTRIBUTE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.getInt("PRECISION");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.getShort("MINIMUM_SCALE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.getShort("MAXIMUM_SCALE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.getBoolean("FIXED_PREC_SCALE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.getString("LITERAL_PREFIX");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.getString("LITERAL_SUFFIX");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.getBoolean("CASE_SENSITIVE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.getShort("SEARCHABLE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.getShort("NULLABLE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.next();
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.getString("TYPE_NAME");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.getInt("DATA_TYPE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.getString("CREATE_PARAMS");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.getBoolean("UNSIGNED_ATTRIBUTE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.getInt("PRECISION");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.getShort("MINIMUM_SCALE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.getShort("MAXIMUM_SCALE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.getBoolean("FIXED_PREC_SCALE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.getString("LITERAL_PREFIX");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.getString("LITERAL_SUFFIX");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.getBoolean("CASE_SENSITIVE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.getShort("SEARCHABLE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.getShort("NULLABLE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.next();
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.getString("TYPE_NAME");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.getInt("DATA_TYPE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.getString("CREATE_PARAMS");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.getBoolean("UNSIGNED_ATTRIBUTE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.getInt("PRECISION");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.getShort("MINIMUM_SCALE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.getShort("MAXIMUM_SCALE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.getBoolean("FIXED_PREC_SCALE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.getString("LITERAL_PREFIX");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.getString("LITERAL_SUFFIX");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.getBoolean("CASE_SENSITIVE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.getShort("SEARCHABLE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.getShort("NULLABLE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.next();
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.getString("TYPE_NAME");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.getInt("DATA_TYPE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.getString("CREATE_PARAMS");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.getBoolean("UNSIGNED_ATTRIBUTE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.getInt("PRECISION");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.getShort("MINIMUM_SCALE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.getShort("MAXIMUM_SCALE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.getBoolean("FIXED_PREC_SCALE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.getString("LITERAL_PREFIX");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.getString("LITERAL_SUFFIX");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.getBoolean("CASE_SENSITIVE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.getShort("SEARCHABLE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.getShort("NULLABLE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.next();
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.getString("TYPE_NAME");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.getInt("DATA_TYPE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.getString("CREATE_PARAMS");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.getBoolean("UNSIGNED_ATTRIBUTE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.getInt("PRECISION");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.getShort("MINIMUM_SCALE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.getShort("MAXIMUM_SCALE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.getBoolean("FIXED_PREC_SCALE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.getString("LITERAL_PREFIX");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.getString("LITERAL_SUFFIX");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.getBoolean("CASE_SENSITIVE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.getShort("SEARCHABLE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.getShort("NULLABLE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.next();
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.getString("TYPE_NAME");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.getInt("DATA_TYPE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.getString("CREATE_PARAMS");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.getBoolean("UNSIGNED_ATTRIBUTE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.getInt("PRECISION");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.getShort("MINIMUM_SCALE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.getShort("MAXIMUM_SCALE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.getBoolean("FIXED_PREC_SCALE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.getString("LITERAL_PREFIX");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.getString("LITERAL_SUFFIX");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.getBoolean("CASE_SENSITIVE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.getShort("SEARCHABLE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.getShort("NULLABLE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.next();
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.getString("TYPE_NAME");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.getInt("DATA_TYPE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.getString("CREATE_PARAMS");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.getBoolean("UNSIGNED_ATTRIBUTE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.getInt("PRECISION");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.getShort("MINIMUM_SCALE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.getShort("MAXIMUM_SCALE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.getBoolean("FIXED_PREC_SCALE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.getString("LITERAL_PREFIX");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.getString("LITERAL_SUFFIX");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.getBoolean("CASE_SENSITIVE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.getShort("SEARCHABLE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.getShort("NULLABLE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.next();
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.getString("TYPE_NAME");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.getInt("DATA_TYPE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.getString("CREATE_PARAMS");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.getBoolean("UNSIGNED_ATTRIBUTE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.getInt("PRECISION");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.getShort("MINIMUM_SCALE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.getShort("MAXIMUM_SCALE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.getBoolean("FIXED_PREC_SCALE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.getString("LITERAL_PREFIX");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.getString("LITERAL_SUFFIX");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.getBoolean("CASE_SENSITIVE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.getShort("SEARCHABLE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.getShort("NULLABLE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.next();
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.getString("TYPE_NAME");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.getInt("DATA_TYPE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.getString("CREATE_PARAMS");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.getBoolean("UNSIGNED_ATTRIBUTE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.getInt("PRECISION");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.getShort("MINIMUM_SCALE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.getShort("MAXIMUM_SCALE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.getBoolean("FIXED_PREC_SCALE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.getString("LITERAL_PREFIX");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.getString("LITERAL_SUFFIX");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.getBoolean("CASE_SENSITIVE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.getShort("SEARCHABLE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.getShort("NULLABLE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.next();
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs3.close();
+2022-12-26 20:50:10 jdbc[3]: 
+/**/prep3.close();
+2022-12-26 20:50:10 jdbc[3]: 
+/**/conn1.getSchema();
+2022-12-26 20:50:10 jdbc[3]: 
+/**/conn1.getSchema();
+2022-12-26 20:50:10 jdbc[3]: 
+/**/dbMeta0.supportsNamedParameters();
+2022-12-26 20:50:10 jdbc[3]: 
+/**/Statement stat1 = conn1.createStatement();
+2022-12-26 20:50:10 jdbc[3]: 
+/**/ResultSet rs4 = stat1.executeQuery("select * from INFORMATION_SCHEMA.SEQUENCES");
+2022-12-26 20:50:10 jdbc[3]: Plan       : calculate cost for plan [SEQUENCES:-9:org.h2.table.MetaTable@2c002f95]
+2022-12-26 20:50:10 jdbc[3]: Plan       :   for table filter SEQUENCES:-9:org.h2.table.MetaTable@2c002f95
+2022-12-26 20:50:10 jdbc[3]: Table      :     potential plan item cost 10,000 index meta
+2022-12-26 20:50:10 jdbc[3]: Plan       :   best plan item cost 10,000 index meta
+2022-12-26 20:50:10 jdbc[3]: Plan       : plan cost 10,001
+2022-12-26 20:50:10 jdbc[3]: 
+/*SQL */select * from INFORMATION_SCHEMA.SEQUENCES;
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs4.next();
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs4.close();
+2022-12-26 20:50:10 jdbc[3]: 
+/**/stat1.close();
+2022-12-26 20:50:10 jdbc[3]: 
+/**/dbMeta0.getCatalogSeparator();
+2022-12-26 20:50:10 jdbc[3]: 
+/**/dbMeta0.isCatalogAtStart();
+2022-12-26 20:50:10 jdbc[3]: 
+/**/dbMeta0.getTypeInfo();
+2022-12-26 20:50:10 jdbc[3]: 
+/**/PreparedStatement prep4 = conn1.prepareStatement("SELECT TYPE_NAME, DATA_TYPE, PRECISION, PREFIX LITERAL_PREFIX, SUFFIX LITERAL_SUFFIX, PARAMS CREATE_PARAMS, NULLABLE, CASE_SENSITIVE, SEARCHABLE, FALSE UNSIGNED_ATTRIBUTE, FALSE FIXED_PREC_SCALE, AUTO_INCREMENT, TYPE_NAME LOCAL_TYPE_NAME, MINIMUM_SCALE, MAXIMUM_SCALE, DATA_TYPE SQL_DATA_TYPE, ZERO() SQL_DATETIME_SUB, RADIX NUM_PREC_RADIX FROM INFORMATION_SCHEMA.TYPE_INFO ORDER BY DATA_TYPE, POS");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/ResultSet rs5 = prep4.executeQuery();
+2022-12-26 20:50:10 jdbc[3]: 
+/*SQL #:46*/SELECT TYPE_NAME, DATA_TYPE, PRECISION, PREFIX LITERAL_PREFIX, SUFFIX LITERAL_SUFFIX, PARAMS CREATE_PARAMS, NULLABLE, CASE_SENSITIVE, SEARCHABLE, FALSE UNSIGNED_ATTRIBUTE, FALSE FIXED_PREC_SCALE, AUTO_INCREMENT, TYPE_NAME LOCAL_TYPE_NAME, MINIMUM_SCALE, MAXIMUM_SCALE, DATA_TYPE SQL_DATA_TYPE, ZERO() SQL_DATETIME_SUB, RADIX NUM_PREC_RADIX FROM INFORMATION_SCHEMA.TYPE_INFO ORDER BY DATA_TYPE, POS;
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.getStatement();
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.next();
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.getString("TYPE_NAME");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.getInt("DATA_TYPE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.getString("CREATE_PARAMS");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.getBoolean("UNSIGNED_ATTRIBUTE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.getInt("PRECISION");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.getShort("MINIMUM_SCALE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.getShort("MAXIMUM_SCALE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.getBoolean("FIXED_PREC_SCALE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.getString("LITERAL_PREFIX");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.getString("LITERAL_SUFFIX");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.getBoolean("CASE_SENSITIVE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.getShort("SEARCHABLE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.getShort("NULLABLE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.next();
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.getString("TYPE_NAME");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.getInt("DATA_TYPE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.getString("CREATE_PARAMS");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.getBoolean("UNSIGNED_ATTRIBUTE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.getInt("PRECISION");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.getShort("MINIMUM_SCALE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.getShort("MAXIMUM_SCALE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.getBoolean("FIXED_PREC_SCALE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.getString("LITERAL_PREFIX");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.getString("LITERAL_SUFFIX");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.getBoolean("CASE_SENSITIVE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.getShort("SEARCHABLE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.getShort("NULLABLE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.next();
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.getString("TYPE_NAME");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.getInt("DATA_TYPE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.getString("CREATE_PARAMS");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.getBoolean("UNSIGNED_ATTRIBUTE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.getInt("PRECISION");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.getShort("MINIMUM_SCALE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.getShort("MAXIMUM_SCALE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.getBoolean("FIXED_PREC_SCALE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.getString("LITERAL_PREFIX");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.getString("LITERAL_SUFFIX");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.getBoolean("CASE_SENSITIVE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.getShort("SEARCHABLE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.getShort("NULLABLE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.next();
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.getString("TYPE_NAME");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.getInt("DATA_TYPE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.getString("CREATE_PARAMS");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.getBoolean("UNSIGNED_ATTRIBUTE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.getInt("PRECISION");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.getShort("MINIMUM_SCALE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.getShort("MAXIMUM_SCALE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.getBoolean("FIXED_PREC_SCALE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.getString("LITERAL_PREFIX");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.getString("LITERAL_SUFFIX");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.getBoolean("CASE_SENSITIVE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.getShort("SEARCHABLE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.getShort("NULLABLE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.next();
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.getString("TYPE_NAME");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.getInt("DATA_TYPE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.getString("CREATE_PARAMS");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.getBoolean("UNSIGNED_ATTRIBUTE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.getInt("PRECISION");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.getShort("MINIMUM_SCALE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.getShort("MAXIMUM_SCALE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.getBoolean("FIXED_PREC_SCALE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.getString("LITERAL_PREFIX");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.getString("LITERAL_SUFFIX");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.getBoolean("CASE_SENSITIVE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.getShort("SEARCHABLE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.getShort("NULLABLE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.next();
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.getString("TYPE_NAME");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.getInt("DATA_TYPE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.getString("CREATE_PARAMS");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.getBoolean("UNSIGNED_ATTRIBUTE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.getInt("PRECISION");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.getShort("MINIMUM_SCALE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.getShort("MAXIMUM_SCALE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.getBoolean("FIXED_PREC_SCALE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.getString("LITERAL_PREFIX");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.getString("LITERAL_SUFFIX");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.getBoolean("CASE_SENSITIVE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.getShort("SEARCHABLE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.getShort("NULLABLE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.next();
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.getString("TYPE_NAME");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.getInt("DATA_TYPE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.getString("CREATE_PARAMS");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.getBoolean("UNSIGNED_ATTRIBUTE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.getInt("PRECISION");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.getShort("MINIMUM_SCALE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.getShort("MAXIMUM_SCALE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.getBoolean("FIXED_PREC_SCALE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.getString("LITERAL_PREFIX");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.getString("LITERAL_SUFFIX");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.getBoolean("CASE_SENSITIVE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.getShort("SEARCHABLE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.getShort("NULLABLE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.next();
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.getString("TYPE_NAME");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.getInt("DATA_TYPE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.getString("CREATE_PARAMS");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.getBoolean("UNSIGNED_ATTRIBUTE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.getInt("PRECISION");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.getShort("MINIMUM_SCALE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.getShort("MAXIMUM_SCALE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.getBoolean("FIXED_PREC_SCALE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.getString("LITERAL_PREFIX");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.getString("LITERAL_SUFFIX");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.getBoolean("CASE_SENSITIVE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.getShort("SEARCHABLE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.getShort("NULLABLE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.next();
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.getString("TYPE_NAME");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.getInt("DATA_TYPE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.getString("CREATE_PARAMS");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.getBoolean("UNSIGNED_ATTRIBUTE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.getInt("PRECISION");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.getShort("MINIMUM_SCALE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.getShort("MAXIMUM_SCALE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.getBoolean("FIXED_PREC_SCALE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.getString("LITERAL_PREFIX");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.getString("LITERAL_SUFFIX");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.getBoolean("CASE_SENSITIVE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.getShort("SEARCHABLE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.getShort("NULLABLE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.next();
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.getString("TYPE_NAME");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.getInt("DATA_TYPE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.getString("CREATE_PARAMS");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.getBoolean("UNSIGNED_ATTRIBUTE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.getInt("PRECISION");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.getShort("MINIMUM_SCALE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.getShort("MAXIMUM_SCALE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.getBoolean("FIXED_PREC_SCALE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.getString("LITERAL_PREFIX");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.getString("LITERAL_SUFFIX");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.getBoolean("CASE_SENSITIVE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.getShort("SEARCHABLE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.getShort("NULLABLE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.next();
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.getString("TYPE_NAME");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.getInt("DATA_TYPE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.getString("CREATE_PARAMS");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.getBoolean("UNSIGNED_ATTRIBUTE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.getInt("PRECISION");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.getShort("MINIMUM_SCALE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.getShort("MAXIMUM_SCALE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.getBoolean("FIXED_PREC_SCALE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.getString("LITERAL_PREFIX");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.getString("LITERAL_SUFFIX");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.getBoolean("CASE_SENSITIVE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.getShort("SEARCHABLE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.getShort("NULLABLE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.next();
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.getString("TYPE_NAME");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.getInt("DATA_TYPE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.getString("CREATE_PARAMS");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.getBoolean("UNSIGNED_ATTRIBUTE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.getInt("PRECISION");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.getShort("MINIMUM_SCALE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.getShort("MAXIMUM_SCALE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.getBoolean("FIXED_PREC_SCALE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.getString("LITERAL_PREFIX");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.getString("LITERAL_SUFFIX");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.getBoolean("CASE_SENSITIVE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.getShort("SEARCHABLE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.getShort("NULLABLE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.next();
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.getString("TYPE_NAME");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.getInt("DATA_TYPE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.getString("CREATE_PARAMS");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.getBoolean("UNSIGNED_ATTRIBUTE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.getInt("PRECISION");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.getShort("MINIMUM_SCALE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.getShort("MAXIMUM_SCALE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.getBoolean("FIXED_PREC_SCALE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.getString("LITERAL_PREFIX");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.getString("LITERAL_SUFFIX");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.getBoolean("CASE_SENSITIVE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.getShort("SEARCHABLE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.getShort("NULLABLE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.next();
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.getString("TYPE_NAME");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.getInt("DATA_TYPE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.getString("CREATE_PARAMS");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.getBoolean("UNSIGNED_ATTRIBUTE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.getInt("PRECISION");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.getShort("MINIMUM_SCALE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.getShort("MAXIMUM_SCALE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.getBoolean("FIXED_PREC_SCALE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.getString("LITERAL_PREFIX");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.getString("LITERAL_SUFFIX");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.getBoolean("CASE_SENSITIVE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.getShort("SEARCHABLE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.getShort("NULLABLE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.next();
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.getString("TYPE_NAME");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.getInt("DATA_TYPE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.getString("CREATE_PARAMS");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.getBoolean("UNSIGNED_ATTRIBUTE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.getInt("PRECISION");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.getShort("MINIMUM_SCALE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.getShort("MAXIMUM_SCALE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.getBoolean("FIXED_PREC_SCALE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.getString("LITERAL_PREFIX");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.getString("LITERAL_SUFFIX");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.getBoolean("CASE_SENSITIVE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.getShort("SEARCHABLE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.getShort("NULLABLE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.next();
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.getString("TYPE_NAME");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.getInt("DATA_TYPE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.getString("CREATE_PARAMS");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.getBoolean("UNSIGNED_ATTRIBUTE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.getInt("PRECISION");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.getShort("MINIMUM_SCALE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.getShort("MAXIMUM_SCALE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.getBoolean("FIXED_PREC_SCALE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.getString("LITERAL_PREFIX");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.getString("LITERAL_SUFFIX");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.getBoolean("CASE_SENSITIVE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.getShort("SEARCHABLE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.getShort("NULLABLE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.next();
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.getString("TYPE_NAME");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.getInt("DATA_TYPE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.getString("CREATE_PARAMS");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.getBoolean("UNSIGNED_ATTRIBUTE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.getInt("PRECISION");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.getShort("MINIMUM_SCALE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.getShort("MAXIMUM_SCALE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.getBoolean("FIXED_PREC_SCALE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.getString("LITERAL_PREFIX");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.getString("LITERAL_SUFFIX");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.getBoolean("CASE_SENSITIVE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.getShort("SEARCHABLE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.getShort("NULLABLE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.next();
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.getString("TYPE_NAME");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.getInt("DATA_TYPE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.getString("CREATE_PARAMS");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.getBoolean("UNSIGNED_ATTRIBUTE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.getInt("PRECISION");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.getShort("MINIMUM_SCALE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.getShort("MAXIMUM_SCALE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.getBoolean("FIXED_PREC_SCALE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.getString("LITERAL_PREFIX");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.getString("LITERAL_SUFFIX");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.getBoolean("CASE_SENSITIVE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.getShort("SEARCHABLE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.getShort("NULLABLE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.next();
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.getString("TYPE_NAME");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.getInt("DATA_TYPE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.getString("CREATE_PARAMS");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.getBoolean("UNSIGNED_ATTRIBUTE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.getInt("PRECISION");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.getShort("MINIMUM_SCALE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.getShort("MAXIMUM_SCALE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.getBoolean("FIXED_PREC_SCALE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.getString("LITERAL_PREFIX");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.getString("LITERAL_SUFFIX");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.getBoolean("CASE_SENSITIVE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.getShort("SEARCHABLE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.getShort("NULLABLE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.next();
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.getString("TYPE_NAME");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.getInt("DATA_TYPE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.getString("CREATE_PARAMS");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.getBoolean("UNSIGNED_ATTRIBUTE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.getInt("PRECISION");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.getShort("MINIMUM_SCALE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.getShort("MAXIMUM_SCALE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.getBoolean("FIXED_PREC_SCALE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.getString("LITERAL_PREFIX");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.getString("LITERAL_SUFFIX");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.getBoolean("CASE_SENSITIVE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.getShort("SEARCHABLE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.getShort("NULLABLE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.next();
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.getString("TYPE_NAME");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.getInt("DATA_TYPE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.getString("CREATE_PARAMS");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.getBoolean("UNSIGNED_ATTRIBUTE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.getInt("PRECISION");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.getShort("MINIMUM_SCALE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.getShort("MAXIMUM_SCALE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.getBoolean("FIXED_PREC_SCALE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.getString("LITERAL_PREFIX");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.getString("LITERAL_SUFFIX");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.getBoolean("CASE_SENSITIVE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.getShort("SEARCHABLE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.getShort("NULLABLE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.next();
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.getString("TYPE_NAME");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.getInt("DATA_TYPE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.getString("CREATE_PARAMS");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.getBoolean("UNSIGNED_ATTRIBUTE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.getInt("PRECISION");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.getShort("MINIMUM_SCALE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.getShort("MAXIMUM_SCALE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.getBoolean("FIXED_PREC_SCALE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.getString("LITERAL_PREFIX");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.getString("LITERAL_SUFFIX");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.getBoolean("CASE_SENSITIVE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.getShort("SEARCHABLE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.getShort("NULLABLE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.next();
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.getString("TYPE_NAME");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.getInt("DATA_TYPE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.getString("CREATE_PARAMS");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.getBoolean("UNSIGNED_ATTRIBUTE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.getInt("PRECISION");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.getShort("MINIMUM_SCALE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.getShort("MAXIMUM_SCALE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.getBoolean("FIXED_PREC_SCALE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.getString("LITERAL_PREFIX");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.getString("LITERAL_SUFFIX");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.getBoolean("CASE_SENSITIVE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.getShort("SEARCHABLE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.getShort("NULLABLE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.next();
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.getString("TYPE_NAME");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.getInt("DATA_TYPE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.getString("CREATE_PARAMS");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.getBoolean("UNSIGNED_ATTRIBUTE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.getInt("PRECISION");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.getShort("MINIMUM_SCALE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.getShort("MAXIMUM_SCALE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.getBoolean("FIXED_PREC_SCALE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.getString("LITERAL_PREFIX");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.getString("LITERAL_SUFFIX");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.getBoolean("CASE_SENSITIVE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.getShort("SEARCHABLE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.getShort("NULLABLE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.next();
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.getString("TYPE_NAME");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.getInt("DATA_TYPE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.getString("CREATE_PARAMS");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.getBoolean("UNSIGNED_ATTRIBUTE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.getInt("PRECISION");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.getShort("MINIMUM_SCALE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.getShort("MAXIMUM_SCALE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.getBoolean("FIXED_PREC_SCALE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.getString("LITERAL_PREFIX");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.getString("LITERAL_SUFFIX");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.getBoolean("CASE_SENSITIVE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.getShort("SEARCHABLE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.getShort("NULLABLE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.next();
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.getString("TYPE_NAME");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.getInt("DATA_TYPE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.getString("CREATE_PARAMS");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.getBoolean("UNSIGNED_ATTRIBUTE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.getInt("PRECISION");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.getShort("MINIMUM_SCALE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.getShort("MAXIMUM_SCALE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.getBoolean("FIXED_PREC_SCALE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.getString("LITERAL_PREFIX");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.getString("LITERAL_SUFFIX");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.getBoolean("CASE_SENSITIVE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.getShort("SEARCHABLE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.getShort("NULLABLE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.next();
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.getString("TYPE_NAME");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.getInt("DATA_TYPE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.getString("CREATE_PARAMS");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.getBoolean("UNSIGNED_ATTRIBUTE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.getInt("PRECISION");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.getShort("MINIMUM_SCALE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.getShort("MAXIMUM_SCALE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.getBoolean("FIXED_PREC_SCALE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.getString("LITERAL_PREFIX");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.getString("LITERAL_SUFFIX");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.getBoolean("CASE_SENSITIVE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.getShort("SEARCHABLE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.getShort("NULLABLE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.next();
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.getString("TYPE_NAME");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.getInt("DATA_TYPE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.getString("CREATE_PARAMS");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.getBoolean("UNSIGNED_ATTRIBUTE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.getInt("PRECISION");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.getShort("MINIMUM_SCALE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.getShort("MAXIMUM_SCALE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.getBoolean("FIXED_PREC_SCALE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.getString("LITERAL_PREFIX");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.getString("LITERAL_SUFFIX");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.getBoolean("CASE_SENSITIVE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.getShort("SEARCHABLE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.getShort("NULLABLE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.next();
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.getString("TYPE_NAME");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.getInt("DATA_TYPE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.getString("CREATE_PARAMS");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.getBoolean("UNSIGNED_ATTRIBUTE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.getInt("PRECISION");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.getShort("MINIMUM_SCALE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.getShort("MAXIMUM_SCALE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.getBoolean("FIXED_PREC_SCALE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.getString("LITERAL_PREFIX");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.getString("LITERAL_SUFFIX");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.getBoolean("CASE_SENSITIVE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.getShort("SEARCHABLE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.getShort("NULLABLE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.next();
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.getString("TYPE_NAME");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.getInt("DATA_TYPE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.getString("CREATE_PARAMS");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.getBoolean("UNSIGNED_ATTRIBUTE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.getInt("PRECISION");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.getShort("MINIMUM_SCALE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.getShort("MAXIMUM_SCALE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.getBoolean("FIXED_PREC_SCALE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.getString("LITERAL_PREFIX");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.getString("LITERAL_SUFFIX");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.getBoolean("CASE_SENSITIVE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.getShort("SEARCHABLE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.getShort("NULLABLE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.next();
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.getString("TYPE_NAME");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.getInt("DATA_TYPE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.getString("CREATE_PARAMS");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.getBoolean("UNSIGNED_ATTRIBUTE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.getInt("PRECISION");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.getShort("MINIMUM_SCALE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.getShort("MAXIMUM_SCALE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.getBoolean("FIXED_PREC_SCALE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.getString("LITERAL_PREFIX");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.getString("LITERAL_SUFFIX");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.getBoolean("CASE_SENSITIVE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.getShort("SEARCHABLE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.getShort("NULLABLE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.next();
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.getString("TYPE_NAME");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.getInt("DATA_TYPE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.getString("CREATE_PARAMS");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.getBoolean("UNSIGNED_ATTRIBUTE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.getInt("PRECISION");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.getShort("MINIMUM_SCALE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.getShort("MAXIMUM_SCALE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.getBoolean("FIXED_PREC_SCALE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.getString("LITERAL_PREFIX");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.getString("LITERAL_SUFFIX");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.getBoolean("CASE_SENSITIVE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.getShort("SEARCHABLE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.getShort("NULLABLE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.next();
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.getString("TYPE_NAME");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.getInt("DATA_TYPE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.getString("CREATE_PARAMS");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.getBoolean("UNSIGNED_ATTRIBUTE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.getInt("PRECISION");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.getShort("MINIMUM_SCALE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.getShort("MAXIMUM_SCALE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.getBoolean("FIXED_PREC_SCALE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.getString("LITERAL_PREFIX");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.getString("LITERAL_SUFFIX");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.getBoolean("CASE_SENSITIVE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.getShort("SEARCHABLE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.getShort("NULLABLE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.next();
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.getString("TYPE_NAME");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.getInt("DATA_TYPE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.getString("CREATE_PARAMS");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.getBoolean("UNSIGNED_ATTRIBUTE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.getInt("PRECISION");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.getShort("MINIMUM_SCALE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.getShort("MAXIMUM_SCALE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.getBoolean("FIXED_PREC_SCALE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.getString("LITERAL_PREFIX");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.getString("LITERAL_SUFFIX");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.getBoolean("CASE_SENSITIVE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.getShort("SEARCHABLE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.getShort("NULLABLE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.next();
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.getString("TYPE_NAME");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.getInt("DATA_TYPE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.getString("CREATE_PARAMS");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.getBoolean("UNSIGNED_ATTRIBUTE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.getInt("PRECISION");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.getShort("MINIMUM_SCALE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.getShort("MAXIMUM_SCALE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.getBoolean("FIXED_PREC_SCALE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.getString("LITERAL_PREFIX");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.getString("LITERAL_SUFFIX");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.getBoolean("CASE_SENSITIVE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.getShort("SEARCHABLE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.getShort("NULLABLE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.next();
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.getString("TYPE_NAME");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.getInt("DATA_TYPE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.getString("CREATE_PARAMS");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.getBoolean("UNSIGNED_ATTRIBUTE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.getInt("PRECISION");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.getShort("MINIMUM_SCALE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.getShort("MAXIMUM_SCALE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.getBoolean("FIXED_PREC_SCALE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.getString("LITERAL_PREFIX");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.getString("LITERAL_SUFFIX");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.getBoolean("CASE_SENSITIVE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.getShort("SEARCHABLE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.getShort("NULLABLE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.next();
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.getString("TYPE_NAME");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.getInt("DATA_TYPE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.getString("CREATE_PARAMS");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.getBoolean("UNSIGNED_ATTRIBUTE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.getInt("PRECISION");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.getShort("MINIMUM_SCALE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.getShort("MAXIMUM_SCALE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.getBoolean("FIXED_PREC_SCALE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.getString("LITERAL_PREFIX");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.getString("LITERAL_SUFFIX");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.getBoolean("CASE_SENSITIVE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.getShort("SEARCHABLE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.getShort("NULLABLE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.next();
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.getString("TYPE_NAME");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.getInt("DATA_TYPE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.getString("CREATE_PARAMS");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.getBoolean("UNSIGNED_ATTRIBUTE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.getInt("PRECISION");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.getShort("MINIMUM_SCALE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.getShort("MAXIMUM_SCALE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.getBoolean("FIXED_PREC_SCALE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.getString("LITERAL_PREFIX");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.getString("LITERAL_SUFFIX");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.getBoolean("CASE_SENSITIVE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.getShort("SEARCHABLE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.getShort("NULLABLE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.next();
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.getString("TYPE_NAME");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.getInt("DATA_TYPE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.getString("CREATE_PARAMS");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.getBoolean("UNSIGNED_ATTRIBUTE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.getInt("PRECISION");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.getShort("MINIMUM_SCALE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.getShort("MAXIMUM_SCALE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.getBoolean("FIXED_PREC_SCALE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.getString("LITERAL_PREFIX");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.getString("LITERAL_SUFFIX");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.getBoolean("CASE_SENSITIVE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.getShort("SEARCHABLE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.getShort("NULLABLE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.next();
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.getString("TYPE_NAME");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.getInt("DATA_TYPE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.getString("CREATE_PARAMS");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.getBoolean("UNSIGNED_ATTRIBUTE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.getInt("PRECISION");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.getShort("MINIMUM_SCALE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.getShort("MAXIMUM_SCALE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.getBoolean("FIXED_PREC_SCALE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.getString("LITERAL_PREFIX");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.getString("LITERAL_SUFFIX");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.getBoolean("CASE_SENSITIVE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.getShort("SEARCHABLE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.getShort("NULLABLE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.next();
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.getString("TYPE_NAME");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.getInt("DATA_TYPE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.getString("CREATE_PARAMS");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.getBoolean("UNSIGNED_ATTRIBUTE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.getInt("PRECISION");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.getShort("MINIMUM_SCALE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.getShort("MAXIMUM_SCALE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.getBoolean("FIXED_PREC_SCALE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.getString("LITERAL_PREFIX");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.getString("LITERAL_SUFFIX");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.getBoolean("CASE_SENSITIVE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.getShort("SEARCHABLE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.getShort("NULLABLE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.next();
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.getString("TYPE_NAME");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.getInt("DATA_TYPE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.getString("CREATE_PARAMS");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.getBoolean("UNSIGNED_ATTRIBUTE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.getInt("PRECISION");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.getShort("MINIMUM_SCALE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.getShort("MAXIMUM_SCALE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.getBoolean("FIXED_PREC_SCALE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.getString("LITERAL_PREFIX");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.getString("LITERAL_SUFFIX");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.getBoolean("CASE_SENSITIVE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.getShort("SEARCHABLE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.getShort("NULLABLE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.next();
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.getString("TYPE_NAME");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.getInt("DATA_TYPE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.getString("CREATE_PARAMS");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.getBoolean("UNSIGNED_ATTRIBUTE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.getInt("PRECISION");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.getShort("MINIMUM_SCALE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.getShort("MAXIMUM_SCALE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.getBoolean("FIXED_PREC_SCALE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.getString("LITERAL_PREFIX");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.getString("LITERAL_SUFFIX");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.getBoolean("CASE_SENSITIVE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.getShort("SEARCHABLE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.getShort("NULLABLE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.next();
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.getString("TYPE_NAME");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.getInt("DATA_TYPE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.getString("CREATE_PARAMS");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.getBoolean("UNSIGNED_ATTRIBUTE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.getInt("PRECISION");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.getShort("MINIMUM_SCALE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.getShort("MAXIMUM_SCALE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.getBoolean("FIXED_PREC_SCALE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.getString("LITERAL_PREFIX");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.getString("LITERAL_SUFFIX");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.getBoolean("CASE_SENSITIVE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.getShort("SEARCHABLE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.getShort("NULLABLE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.next();
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.getString("TYPE_NAME");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.getInt("DATA_TYPE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.getString("CREATE_PARAMS");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.getBoolean("UNSIGNED_ATTRIBUTE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.getInt("PRECISION");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.getShort("MINIMUM_SCALE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.getShort("MAXIMUM_SCALE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.getBoolean("FIXED_PREC_SCALE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.getString("LITERAL_PREFIX");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.getString("LITERAL_SUFFIX");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.getBoolean("CASE_SENSITIVE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.getShort("SEARCHABLE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.getShort("NULLABLE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.next();
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.getString("TYPE_NAME");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.getInt("DATA_TYPE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.getString("CREATE_PARAMS");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.getBoolean("UNSIGNED_ATTRIBUTE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.getInt("PRECISION");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.getShort("MINIMUM_SCALE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.getShort("MAXIMUM_SCALE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.getBoolean("FIXED_PREC_SCALE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.getString("LITERAL_PREFIX");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.getString("LITERAL_SUFFIX");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.getBoolean("CASE_SENSITIVE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.getShort("SEARCHABLE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.getShort("NULLABLE");
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.next();
+2022-12-26 20:50:10 jdbc[3]: 
+/**/rs5.close();
+2022-12-26 20:50:10 jdbc[3]: 
+/**/prep4.close();
+2022-12-26 20:50:10 jdbc[3]: 
+/**/DatabaseMetaData dbMeta1 = conn1.getMetaData();
+2022-12-26 20:50:10 jdbc[3]: 
+/**/dbMeta1.getJDBCMajorVersion();
+2022-12-26 20:50:10 jdbc[3]: 
+/**/Clob clob0 = conn1.createClob();
+2022-12-26 20:50:10 jdbc[3]: 
+/**/clob0.free();
+2022-12-26 20:50:10 jdbc[3]: 
+/**/conn1.clearWarnings();
+2022-12-26 20:50:10 database: connecting session #4 to /root/test
+2022-12-26 20:50:10 jdbc[4]: 
+/*SQL */SET DB_CLOSE_DELAY -1;
+2022-12-26 20:50:10 jdbc[4]: 
+/*SQL */SET AUTO_SERVER TRUE;
+2022-12-26 20:50:10 jdbc[4]: 
+/*SQL */SET TRACE_LEVEL_SYSTEM_OUT 3;
+2022-12-26 20:50:10 jdbc[4]: 
+/*SQL */SET TRACE_LEVEL_FILE 3;
+2022-12-26 20:50:10 jdbc[4]: 
+/*SQL */SET IGNORECASE TRUE;
+2022-12-26 20:50:10 jdbc[4]: 
+/**/Connection conn2 = DriverManager.getConnection("jdbc:h2:~/test;DB_CLOSE_DELAY=-1;TRACE_LEVEL_FILE=3;TRACE_LEVEL_SYSTEM_OUT=3;IGNORECASE=TRUE;AUTO_SERVER=TRUE", "SA", "");
+2022-12-26 20:50:10 jdbc[4]: 
+/**/conn2.isReadOnly();
+2022-12-26 20:50:10 jdbc[4]: 
+/*SQL #:1*/CALL READONLY();
+2022-12-26 20:50:10 jdbc[4]: 
+/**/conn2.getAutoCommit();
+2022-12-26 20:50:10 database: connecting session #5 to /root/test
+2022-12-26 20:50:10 jdbc[5]: 
+/*SQL */SET DB_CLOSE_DELAY -1;
+2022-12-26 20:50:10 jdbc[5]: 
+/*SQL */SET AUTO_SERVER TRUE;
+2022-12-26 20:50:10 jdbc[5]: 
+/*SQL */SET TRACE_LEVEL_SYSTEM_OUT 3;
+2022-12-26 20:50:10 jdbc[5]: 
+/*SQL */SET TRACE_LEVEL_FILE 3;
+2022-12-26 20:50:10 jdbc[5]: 
+/*SQL */SET IGNORECASE TRUE;
+2022-12-26 20:50:10 jdbc[5]: 
+/**/Connection conn3 = DriverManager.getConnection("jdbc:h2:~/test;DB_CLOSE_DELAY=-1;TRACE_LEVEL_FILE=3;TRACE_LEVEL_SYSTEM_OUT=3;IGNORECASE=TRUE;AUTO_SERVER=TRUE", "SA", "");
+2022-12-26 20:50:10 jdbc[5]: 
+/**/conn3.isReadOnly();
+2022-12-26 20:50:10 jdbc[5]: 
+/*SQL #:1*/CALL READONLY();
+2022-12-26 20:50:10 jdbc[5]: 
+/**/conn3.getAutoCommit();
+2022-12-26 20:50:10 database: connecting session #6 to /root/test
+2022-12-26 20:50:10 jdbc[6]: 
+/*SQL */SET DB_CLOSE_DELAY -1;
+2022-12-26 20:50:10 jdbc[6]: 
+/*SQL */SET AUTO_SERVER TRUE;
+2022-12-26 20:50:10 jdbc[6]: 
+/*SQL */SET TRACE_LEVEL_SYSTEM_OUT 3;
+2022-12-26 20:50:10 jdbc[6]: 
+/*SQL */SET TRACE_LEVEL_FILE 3;
+2022-12-26 20:50:10 jdbc[6]: 
+/*SQL */SET IGNORECASE TRUE;
+2022-12-26 20:50:10 jdbc[6]: 
+/**/Connection conn4 = DriverManager.getConnection("jdbc:h2:~/test;DB_CLOSE_DELAY=-1;TRACE_LEVEL_FILE=3;TRACE_LEVEL_SYSTEM_OUT=3;IGNORECASE=TRUE;AUTO_SERVER=TRUE", "SA", "");
+2022-12-26 20:50:10 jdbc[6]: 
+/**/conn4.isReadOnly();
+2022-12-26 20:50:10 jdbc[6]: 
+/*SQL #:1*/CALL READONLY();
+2022-12-26 20:50:10 jdbc[6]: 
+/**/conn4.getAutoCommit();
+2022-12-26 20:50:10 database: connecting session #7 to /root/test
+2022-12-26 20:50:10 jdbc[7]: 
+/*SQL */SET DB_CLOSE_DELAY -1;
+2022-12-26 20:50:10 jdbc[7]: 
+/*SQL */SET AUTO_SERVER TRUE;
+2022-12-26 20:50:10 jdbc[7]: 
+/*SQL */SET TRACE_LEVEL_SYSTEM_OUT 3;
+2022-12-26 20:50:10 jdbc[7]: 
+/*SQL */SET TRACE_LEVEL_FILE 3;
+2022-12-26 20:50:10 jdbc[7]: 
+/*SQL */SET IGNORECASE TRUE;
+2022-12-26 20:50:10 jdbc[7]: 
+/**/Connection conn5 = DriverManager.getConnection("jdbc:h2:~/test;DB_CLOSE_DELAY=-1;TRACE_LEVEL_FILE=3;TRACE_LEVEL_SYSTEM_OUT=3;IGNORECASE=TRUE;AUTO_SERVER=TRUE", "SA", "");
+2022-12-26 20:50:10 jdbc[7]: 
+/**/conn5.isReadOnly();
+2022-12-26 20:50:10 jdbc[7]: 
+/*SQL #:1*/CALL READONLY();
+2022-12-26 20:50:10 jdbc[7]: 
+/**/conn5.getAutoCommit();
+2022-12-26 20:50:10 database: connecting session #8 to /root/test
+2022-12-26 20:50:10 jdbc[8]: 
+/*SQL */SET DB_CLOSE_DELAY -1;
+2022-12-26 20:50:10 jdbc[8]: 
+/*SQL */SET AUTO_SERVER TRUE;
+2022-12-26 20:50:10 jdbc[8]: 
+/*SQL */SET TRACE_LEVEL_SYSTEM_OUT 3;
+2022-12-26 20:50:10 jdbc[8]: 
+/*SQL */SET TRACE_LEVEL_FILE 3;
+2022-12-26 20:50:10 jdbc[8]: 
+/*SQL */SET IGNORECASE TRUE;
+2022-12-26 20:50:10 jdbc[8]: 
+/**/Connection conn6 = DriverManager.getConnection("jdbc:h2:~/test;DB_CLOSE_DELAY=-1;TRACE_LEVEL_FILE=3;TRACE_LEVEL_SYSTEM_OUT=3;IGNORECASE=TRUE;AUTO_SERVER=TRUE", "SA", "");
+2022-12-26 20:50:10 jdbc[8]: 
+/**/conn6.isReadOnly();
+2022-12-26 20:50:10 jdbc[8]: 
+/*SQL #:1*/CALL READONLY();
+2022-12-26 20:50:10 jdbc[8]: 
+/**/conn6.getAutoCommit();
+2022-12-26 20:50:10 database: connecting session #9 to /root/test
+2022-12-26 20:50:10 jdbc[9]: 
+/*SQL */SET DB_CLOSE_DELAY -1;
+2022-12-26 20:50:10 jdbc[9]: 
+/*SQL */SET AUTO_SERVER TRUE;
+2022-12-26 20:50:10 jdbc[9]: 
+/*SQL */SET TRACE_LEVEL_SYSTEM_OUT 3;
+2022-12-26 20:50:10 jdbc[9]: 
+/*SQL */SET TRACE_LEVEL_FILE 3;
+2022-12-26 20:50:10 jdbc[9]: 
+/*SQL */SET IGNORECASE TRUE;
+2022-12-26 20:50:10 jdbc[9]: 
+/**/Connection conn7 = DriverManager.getConnection("jdbc:h2:~/test;DB_CLOSE_DELAY=-1;TRACE_LEVEL_FILE=3;TRACE_LEVEL_SYSTEM_OUT=3;IGNORECASE=TRUE;AUTO_SERVER=TRUE", "SA", "");
+2022-12-26 20:50:10 jdbc[9]: 
+/**/conn7.isReadOnly();
+2022-12-26 20:50:10 jdbc[9]: 
+/*SQL #:1*/CALL READONLY();
+2022-12-26 20:50:10 jdbc[9]: 
+/**/conn7.getAutoCommit();
+2022-12-26 20:50:10 database: connecting session #10 to /root/test
+2022-12-26 20:50:10 jdbc[10]: 
+/*SQL */SET DB_CLOSE_DELAY -1;
+2022-12-26 20:50:10 jdbc[10]: 
+/*SQL */SET AUTO_SERVER TRUE;
+2022-12-26 20:50:10 jdbc[10]: 
+/*SQL */SET TRACE_LEVEL_SYSTEM_OUT 3;
+2022-12-26 20:50:10 jdbc[10]: 
+/*SQL */SET TRACE_LEVEL_FILE 3;
+2022-12-26 20:50:10 jdbc[10]: 
+/*SQL */SET IGNORECASE TRUE;
+2022-12-26 20:50:10 jdbc[10]: 
+/**/Connection conn8 = DriverManager.getConnection("jdbc:h2:~/test;DB_CLOSE_DELAY=-1;TRACE_LEVEL_FILE=3;TRACE_LEVEL_SYSTEM_OUT=3;IGNORECASE=TRUE;AUTO_SERVER=TRUE", "SA", "");
+2022-12-26 20:50:10 jdbc[10]: 
+/**/conn8.isReadOnly();
+2022-12-26 20:50:10 jdbc[10]: 
+/*SQL #:1*/CALL READONLY();
+2022-12-26 20:50:10 jdbc[10]: 
+/**/conn8.getAutoCommit();
+2022-12-26 20:50:10 database: connecting session #11 to /root/test
+2022-12-26 20:50:10 jdbc[11]: 
+/*SQL */SET DB_CLOSE_DELAY -1;
+2022-12-26 20:50:10 jdbc[11]: 
+/*SQL */SET AUTO_SERVER TRUE;
+2022-12-26 20:50:10 jdbc[11]: 
+/*SQL */SET TRACE_LEVEL_SYSTEM_OUT 3;
+2022-12-26 20:50:10 jdbc[11]: 
+/*SQL */SET TRACE_LEVEL_FILE 3;
+2022-12-26 20:50:10 jdbc[11]: 
+/*SQL */SET IGNORECASE TRUE;
+2022-12-26 20:50:10 jdbc[11]: 
+/**/Connection conn9 = DriverManager.getConnection("jdbc:h2:~/test;DB_CLOSE_DELAY=-1;TRACE_LEVEL_FILE=3;TRACE_LEVEL_SYSTEM_OUT=3;IGNORECASE=TRUE;AUTO_SERVER=TRUE", "SA", "");
+2022-12-26 20:50:10 jdbc[11]: 
+/**/conn9.isReadOnly();
+2022-12-26 20:50:10 jdbc[11]: 
+/*SQL #:1*/CALL READONLY();
+2022-12-26 20:50:10 jdbc[11]: 
+/**/conn9.getAutoCommit();
+2022-12-26 20:50:10 database: connecting session #12 to /root/test
+2022-12-26 20:50:10 jdbc[12]: 
+/*SQL */SET DB_CLOSE_DELAY -1;
+2022-12-26 20:50:10 jdbc[12]: 
+/*SQL */SET AUTO_SERVER TRUE;
+2022-12-26 20:50:10 jdbc[12]: 
+/*SQL */SET TRACE_LEVEL_SYSTEM_OUT 3;
+2022-12-26 20:50:10 jdbc[12]: 
+/*SQL */SET TRACE_LEVEL_FILE 3;
+2022-12-26 20:50:10 jdbc[12]: 
+/*SQL */SET IGNORECASE TRUE;
+2022-12-26 20:50:10 jdbc[12]: 
+/**/Connection conn10 = DriverManager.getConnection("jdbc:h2:~/test;DB_CLOSE_DELAY=-1;TRACE_LEVEL_FILE=3;TRACE_LEVEL_SYSTEM_OUT=3;IGNORECASE=TRUE;AUTO_SERVER=TRUE", "SA", "");
+2022-12-26 20:50:10 jdbc[12]: 
+/**/conn10.isReadOnly();
+2022-12-26 20:50:10 jdbc[12]: 
+/*SQL #:1*/CALL READONLY();
+2022-12-26 20:50:10 jdbc[12]: 
+/**/conn10.getAutoCommit();
+Hibernate: drop table if exists student CASCADE 
+2022-12-26 20:50:11 jdbc[3]: 
+/**/conn1.getAutoCommit();
+2022-12-26 20:50:11 jdbc[3]: 
+/**/Statement stat2 = conn1.createStatement();
+2022-12-26 20:50:11 jdbc[3]: 
+/**/stat2.execute("drop table if exists student CASCADE ");
+2022-12-26 20:50:11 jdbc[3]: 
+/*SQL */drop table if exists student CASCADE;
+2022-12-26 20:50:11 jdbc[3]: 
+/**/stat2.getWarnings();
+Hibernate: drop table if exists student_grade CASCADE 
+2022-12-26 20:50:11 jdbc[3]: 
+/**/stat2.execute("drop table if exists student_grade CASCADE ");
+2022-12-26 20:50:11 jdbc[3]: 
+/*SQL */drop table if exists student_grade CASCADE;
+2022-12-26 20:50:11 jdbc[3]: 
+/**/stat2.getWarnings();
+Hibernate: drop table if exists student_out CASCADE 
+2022-12-26 20:50:11 jdbc[3]: 
+/**/stat2.execute("drop table if exists student_out CASCADE ");
+2022-12-26 20:50:11 jdbc[3]: 
+/*SQL */drop table if exists student_out CASCADE;
+2022-12-26 20:50:11 jdbc[3]: 
+/**/stat2.getWarnings();
+Hibernate: drop table if exists users CASCADE 
+2022-12-26 20:50:11 jdbc[3]: 
+/**/stat2.execute("drop table if exists users CASCADE ");
+2022-12-26 20:50:11 jdbc[3]: 
+/*SQL */drop table if exists users CASCADE;
+2022-12-26 20:50:11 jdbc[3]: 
+/**/stat2.getWarnings();
+Hibernate: drop sequence if exists hibernate_sequence
+2022-12-26 20:50:11 jdbc[3]: 
+/**/stat2.execute("drop sequence if exists hibernate_sequence");
+2022-12-26 20:50:11 jdbc[3]: 
+/*SQL */drop sequence if exists hibernate_sequence;
+2022-12-26 20:50:11 jdbc[3]: 
+/**/stat2.getWarnings();
+2022-12-26 20:50:11 jdbc[3]: 
+/**/stat2.close();
+2022-12-26 20:50:11 jdbc[3]: 
+/**/conn1.clearWarnings();
+Hibernate: create sequence hibernate_sequence start with 1 increment by 1
+2022-12-26 20:50:11 jdbc[3]: 
+/**/conn1.getAutoCommit();
+2022-12-26 20:50:11 jdbc[3]: 
+/**/Statement stat3 = conn1.createStatement();
+2022-12-26 20:50:11 jdbc[3]: 
+/**/stat3.execute("create sequence hibernate_sequence start with 1 increment by 1");
+2022-12-26 20:50:11 lock: 3 exclusive write lock requesting for SYS 
+2022-12-26 20:50:11 lock: 3 exclusive write lock added for SYS 
+2022-12-26 20:50:11 jdbc[3]: 
+/*SQL t:2*/create sequence hibernate_sequence start with 1 increment by 1;
+2022-12-26 20:50:11 lock: 3 exclusive write lock unlock SYS 
+2022-12-26 20:50:11 jdbc[3]: 
+/**/stat3.getWarnings();
+Hibernate: create table student (id bigint not null, birth_date timestamp, created_at timestamp not null, fullname varchar(60), graduation_score double check (graduation_score>=30 AND graduation_score<=110), phone varchar(20), profile_picture varchar(500), sat_score integer check (sat_score>=100 AND sat_score<=800), primary key (id))
+2022-12-26 20:50:11 jdbc[3]: 
+/**/stat3.execute("create table student (id bigint not null, birth_date timestamp, created_at timestamp not null, fullname varchar(60), graduation_score double check (graduation_score>=30 AND graduation_score<=110), phone varchar(20), profile_picture varchar(500), sat_score integer check (sat_score>=100 AND sat_score<=800), primary key (id))");
+2022-12-26 20:50:11 lock: 3 exclusive write lock requesting for SYS 
+2022-12-26 20:50:11 lock: 3 exclusive write lock added for SYS 
+2022-12-26 20:50:11 lock: 3 exclusive write lock unlock SYS 
+2022-12-26 20:50:11 lock: 3 exclusive write lock requesting for SYS 
+2022-12-26 20:50:11 lock: 3 exclusive write lock added for SYS 
+2022-12-26 20:50:11 lock: 3 exclusive write lock requesting for STUDENT 
+2022-12-26 20:50:11 lock: 3 exclusive write lock added for STUDENT 
+2022-12-26 20:50:11 jdbc[3]: 
+/*SQL t:1*/create table student (id bigint not null, birth_date timestamp, created_at timestamp not null, fullname varchar(60), graduation_score double check (graduation_score>=30 AND graduation_score<=110), phone varchar(20), profile_picture varchar(500), sat_score integer check (sat_score>=100 AND sat_score<=800), primary key (id));
+2022-12-26 20:50:11 lock: 3 exclusive write lock unlock SYS 
+2022-12-26 20:50:11 lock: 3 exclusive write lock unlock STUDENT 
+2022-12-26 20:50:11 jdbc[3]: 
+/**/stat3.getWarnings();
+Hibernate: create table student_grade (id bigint not null, course_name varchar(60), course_score integer check (course_score<=100 AND course_score>=10), created_at timestamp not null, student_id bigint not null, primary key (id))
+2022-12-26 20:50:11 jdbc[3]: 
+/**/stat3.execute("create table student_grade (id bigint not null, course_name varchar(60), course_score integer check (course_score<=100 AND course_score>=10), created_at timestamp not null, student_id bigint not null, primary key (id))");
+2022-12-26 20:50:11 lock: 3 exclusive write lock requesting for SYS 
+2022-12-26 20:50:11 lock: 3 exclusive write lock added for SYS 
+2022-12-26 20:50:11 lock: 3 exclusive write lock unlock SYS 
+2022-12-26 20:50:11 lock: 3 exclusive write lock requesting for SYS 
+2022-12-26 20:50:11 lock: 3 exclusive write lock added for SYS 
+2022-12-26 20:50:11 lock: 3 exclusive write lock requesting for STUDENT_GRADE 
+2022-12-26 20:50:11 lock: 3 exclusive write lock added for STUDENT_GRADE 
+2022-12-26 20:50:11 jdbc[3]: 
+/*SQL t:1*/create table student_grade (id bigint not null, course_name varchar(60), course_score integer check (course_score<=100 AND course_score>=10), created_at timestamp not null, student_id bigint not null, primary key (id));
+2022-12-26 20:50:11 lock: 3 exclusive write lock unlock SYS 
+2022-12-26 20:50:11 lock: 3 exclusive write lock unlock STUDENT_GRADE 
+2022-12-26 20:50:11 jdbc[3]: 
+/**/stat3.getWarnings();
+Hibernate: create table student_out (id bigint not null, avgscore double, birthdate timestamp, createdat timestamp, fullname varchar(255), graduationscore double, phone varchar(255), profilepicture varchar(255), satscore integer, primary key (id))
+2022-12-26 20:50:11 jdbc[3]: 
+/**/stat3.execute("create table student_out (id bigint not null, avgscore double, birthdate timestamp, createdat timestamp, fullname varchar(255), graduationscore double, phone varchar(255), profilepicture varchar(255), satscore integer, primary key (id))");
+2022-12-26 20:50:11 lock: 3 exclusive write lock requesting for SYS 
+2022-12-26 20:50:11 lock: 3 exclusive write lock added for SYS 
+2022-12-26 20:50:11 lock: 3 exclusive write lock unlock SYS 
+2022-12-26 20:50:11 lock: 3 exclusive write lock requesting for SYS 
+2022-12-26 20:50:11 lock: 3 exclusive write lock added for SYS 
+2022-12-26 20:50:11 lock: 3 exclusive write lock requesting for STUDENT_OUT 
+2022-12-26 20:50:11 lock: 3 exclusive write lock added for STUDENT_OUT 
+2022-12-26 20:50:11 jdbc[3]: 
+/*SQL */create table student_out (id bigint not null, avgscore double, birthdate timestamp, createdat timestamp, fullname varchar(255), graduationscore double, phone varchar(255), profilepicture varchar(255), satscore integer, primary key (id));
+2022-12-26 20:50:11 lock: 3 exclusive write lock unlock SYS 
+2022-12-26 20:50:11 lock: 3 exclusive write lock unlock STUDENT_OUT 
+2022-12-26 20:50:11 jdbc[3]: 
+/**/stat3.getWarnings();
+Hibernate: create table users (id bigint generated by default as identity, name varchar(255), password varchar(255), primary key (id))
+2022-12-26 20:50:11 jdbc[3]: 
+/**/stat3.execute("create table users (id bigint generated by default as identity, name varchar(255), password varchar(255), primary key (id))");
+2022-12-26 20:50:11 lock: 3 exclusive write lock requesting for SYS 
+2022-12-26 20:50:11 lock: 3 exclusive write lock added for SYS 
+2022-12-26 20:50:11 lock: 3 exclusive write lock unlock SYS 
+2022-12-26 20:50:11 lock: 3 exclusive write lock requesting for SYS 
+2022-12-26 20:50:11 lock: 3 exclusive write lock added for SYS 
+2022-12-26 20:50:11 lock: 3 exclusive write lock requesting for USERS 
+2022-12-26 20:50:11 lock: 3 exclusive write lock added for USERS 
+2022-12-26 20:50:11 jdbc[3]: 
+/*SQL t:3*/create table users (id bigint generated by default as identity, name varchar(255), password varchar(255), primary key (id));
+2022-12-26 20:50:11 lock: 3 exclusive write lock unlock SYS 
+2022-12-26 20:50:11 lock: 3 exclusive write lock unlock USERS 
+2022-12-26 20:50:11 jdbc[3]: 
+/**/stat3.getWarnings();
+Hibernate: alter table student_grade add constraint FKdtotyan2ik5ik35sd7ig0omix foreign key (student_id) references student
+2022-12-26 20:50:11 jdbc[3]: 
+/**/stat3.execute("alter table student_grade add constraint FKdtotyan2ik5ik35sd7ig0omix foreign key (student_id) references student");
+2022-12-26 20:50:11 lock: 3 exclusive write lock requesting for SYS 
+2022-12-26 20:50:11 lock: 3 exclusive write lock added for SYS 
+2022-12-26 20:50:11 lock: 3 exclusive write lock requesting for STUDENT_GRADE 
+2022-12-26 20:50:11 lock: 3 exclusive write lock added for STUDENT_GRADE 
+2022-12-26 20:50:11 jdbc[3]: Plan       : calculate cost for plan [P]
+2022-12-26 20:50:11 jdbc[3]: Plan       :   for table filter P
+2022-12-26 20:50:11 jdbc[3]: Table      :     potential plan item cost 10,200 index PUBLIC.STUDENT.tableScan
+2022-12-26 20:50:11 jdbc[3]: Table      :     potential plan item cost 230 index PUBLIC.PRIMARY_KEY_B
+2022-12-26 20:50:11 jdbc[3]: Plan       :   best plan item cost 227.7 index PUBLIC.PRIMARY_KEY_B
+2022-12-26 20:50:11 jdbc[3]: Plan       : plan cost 228.7
+2022-12-26 20:50:11 jdbc[3]: Plan       : calculate cost for plan [C]
+2022-12-26 20:50:11 jdbc[3]: Plan       :   for table filter C
+2022-12-26 20:50:11 jdbc[3]: Plan       : calculate cost for plan [PUBLIC.STUDENT_GRADE]
+2022-12-26 20:50:11 jdbc[3]: Plan       :   for table filter PUBLIC.STUDENT_GRADE
+2022-12-26 20:50:11 jdbc[3]: Table      :     potential plan item cost 10,200 index PUBLIC.STUDENT_GRADE.tableScan
+2022-12-26 20:50:11 jdbc[3]: Table      :     potential plan item cost 12,210 index PUBLIC.PRIMARY_KEY_C
+2022-12-26 20:50:11 jdbc[3]: Table      :     potential plan item cost 11,010 index PUBLIC.FKDTOTYAN2IK5IK35SD7IG0OMIX_INDEX_C
+2022-12-26 20:50:11 jdbc[3]: Plan       :   best plan item cost 10,200 index PUBLIC.STUDENT_GRADE.tableScan
+2022-12-26 20:50:11 jdbc[3]: Plan       : plan cost 10,201
+2022-12-26 20:50:11 jdbc[3]: Plan       : calculate cost for plan [PUBLIC.STUDENT_GRADE]
+2022-12-26 20:50:11 jdbc[3]: Plan       :   for table filter PUBLIC.STUDENT_GRADE
+2022-12-26 20:50:11 jdbc[3]: Table      :     potential plan item cost 10,200 index PUBLIC.STUDENT_GRADE.tableScan
+2022-12-26 20:50:11 jdbc[3]: Table      :     potential plan item cost 12,210 index PUBLIC.PRIMARY_KEY_C
+2022-12-26 20:50:11 jdbc[3]: Table      :     potential plan item cost 11,010 index PUBLIC.FKDTOTYAN2IK5IK35SD7IG0OMIX_INDEX_C
+2022-12-26 20:50:11 jdbc[3]: Plan       :   best plan item cost 10,200 index PUBLIC.STUDENT_GRADE.tableScan
+2022-12-26 20:50:11 jdbc[3]: Plan       : plan cost 10,201
+2022-12-26 20:50:11 jdbc[3]: Plan       : calculate cost for plan [PUBLIC.STUDENT_GRADE]
+2022-12-26 20:50:11 jdbc[3]: Plan       :   for table filter PUBLIC.STUDENT_GRADE
+2022-12-26 20:50:11 jdbc[3]: Table      :     potential plan item cost 10,200 index PUBLIC.STUDENT_GRADE.tableScan
+2022-12-26 20:50:11 jdbc[3]: Table      :     potential plan item cost 12,210 index PUBLIC.PRIMARY_KEY_C
+2022-12-26 20:50:11 jdbc[3]: Table      :     potential plan item cost 12,020 index PUBLIC.FKDTOTYAN2IK5IK35SD7IG0OMIX_INDEX_C
+2022-12-26 20:50:11 jdbc[3]: Plan       :   best plan item cost 10,200 index PUBLIC.STUDENT_GRADE.tableScan
+2022-12-26 20:50:11 jdbc[3]: Plan       : plan cost 10,201
+2022-12-26 20:50:11 jdbc[3]: Plan       :   best plan item cost 10,201 index SELECT
+    STUDENT_ID
+FROM PUBLIC.STUDENT_GRADE
+    /* PUBLIC.FKDTOTYAN2IK5IK35SD7IG0OMIX_INDEX_C */
+WHERE STUDENT_ID IS NOT NULL
+ORDER BY 1
+/* index sorted */
+2022-12-26 20:50:11 jdbc[3]: Plan       : plan cost 10,202
+2022-12-26 20:50:11 jdbc[3]: 
+/*SQL t:11*/alter table student_grade add constraint FKdtotyan2ik5ik35sd7ig0omix foreign key (student_id) references student;
+2022-12-26 20:50:11 lock: 3 exclusive write lock unlock SYS 
+2022-12-26 20:50:11 lock: 3 exclusive write lock unlock STUDENT_GRADE 
+2022-12-26 20:50:11 jdbc[3]: 
+/**/stat3.getWarnings();
+2022-12-26 20:50:11 jdbc[3]: 
+/**/stat3.close();
+2022-12-26 20:50:11 jdbc[3]: 
+/**/conn1.clearWarnings();
+2022-12-26 20:50:11.066  INFO 145868 --- [           main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-12-26 20:50:11.067  INFO 145868 --- [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-12-26 20:50:11.560  WARN 145868 --- [           main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-12-26 20:50:11.852  INFO 145868 --- [           main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint(s) beneath base path '/actuator'
+2022-12-26 20:50:11.978  INFO 145868 --- [           main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@385dae6a, org.springframework.security.web.context.SecurityContextPersistenceFilter@59ba219d, org.springframework.security.web.header.HeaderWriterFilter@67d85d5f, org.springframework.security.web.authentication.logout.LogoutFilter@30df67b8, com.handson.basic.jwt.JwtRequestFilter@68f2ccb2, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@5cf69333, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@79611f57, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@4d923ffc, org.springframework.security.web.session.SessionManagementFilter@7ef7f6d5, org.springframework.security.web.access.ExceptionTranslationFilter@740e38e9, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@13d86de8]
+2022-12-26 20:50:12.275  INFO 145868 --- [           main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2022-12-26 20:50:12.276  INFO 145868 --- [           main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2022-12-26 20:50:12.278  INFO 145868 --- [           main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2022-12-26 20:50:12.309  INFO 145868 --- [           main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_1
+2022-12-26 20:50:12.345  INFO 145868 --- [           main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: updateStudentUsingPUT_1
+2022-12-26 20:50:12.354  INFO 145868 --- [           main] c.handson.basic.StudentsControllerTest   : Started StudentsControllerTest in 4.339 seconds (JVM running for 11.383)
+2022-12-26 20:50:12 jdbc[3]: 
+/**/conn1.isValid(5);
+2022-12-26 20:50:12 jdbc[3]: 
+/**/conn1.getTransactionIsolation();
+2022-12-26 20:50:12 jdbc[3]: 
+/**/conn1.getAutoCommit();
+2022-12-26 20:50:12 jdbc[3]: 
+/**/conn1.setAutoCommit(false);
+Hibernate: call next value for hibernate_sequence
+2022-12-26 20:50:12 jdbc[3]: 
+/**/PreparedStatement prep5 = conn1.prepareStatement("call next value for hibernate_sequence");
+2022-12-26 20:50:12 jdbc[3]: 
+/**/ResultSet rs17 = prep5.executeQuery();
+2022-12-26 20:50:12 lock: 1 exclusive write lock requesting for SYS 
+2022-12-26 20:50:12 lock: 1 exclusive write lock added for SYS 
+2022-12-26 20:50:12 lock: 1 exclusive write lock unlock SYS 
+2022-12-26 20:50:12 jdbc[3]: 
+/*SQL #:1 t:1*/call next value for hibernate_sequence;
+2022-12-26 20:50:12 jdbc[3]: 
+/**/rs17.next();
+2022-12-26 20:50:12 jdbc[3]: 
+/**/rs17.getLong(1);
+2022-12-26 20:50:12 jdbc[3]: 
+/**/rs17.wasNull();
+2022-12-26 20:50:12 jdbc[3]: 
+/**/rs17.close();
+2022-12-26 20:50:12 jdbc[3]: 
+/**/prep5.getMaxRows();
+2022-12-26 20:50:12 jdbc[3]: 
+/**/prep5.getQueryTimeout();
+2022-12-26 20:50:12 jdbc[3]: Plan       : calculate cost for plan [SETTINGS:-7:org.h2.table.MetaTable@5a79e98e]
+2022-12-26 20:50:12 jdbc[3]: Plan       :   for table filter SETTINGS:-7:org.h2.table.MetaTable@5a79e98e
+2022-12-26 20:50:12 jdbc[3]: Table      :     potential plan item cost 10,000 index meta
+2022-12-26 20:50:12 jdbc[3]: Plan       :   best plan item cost 9,900 index meta
+2022-12-26 20:50:12 jdbc[3]: Plan       : plan cost 9,901
+2022-12-26 20:50:12 jdbc[3]: 
+/*SQL l:58 #:1*/SELECT VALUE FROM INFORMATION_SCHEMA.SETTINGS WHERE NAME=? {1: 'QUERY_TIMEOUT'};
+2022-12-26 20:50:12 jdbc[3]: 
+/**/prep5.close();
+Hibernate: insert into student (birth_date, created_at, fullname, graduation_score, phone, profile_picture, sat_score, id) values (?, ?, ?, ?, ?, ?, ?, ?)
+2022-12-26 20:50:12 jdbc[3]: 
+/**/PreparedStatement prep6 = conn1.prepareStatement("insert into student (birth_date, created_at, fullname, graduation_score, phone, profile_picture, sat_score, id) values (?, ?, ?, ?, ?, ?, ?, ?)");
+2022-12-26 20:50:12 jdbc[3]: 
+/**/prep6.setTimestamp(1, Timestamp.valueOf("1979-08-18 00:00:00.0"));
+2022-12-26 20:50:12 jdbc[3]: 
+/**/prep6.setTimestamp(2, Timestamp.valueOf("2022-12-26 20:50:12.398"));
+2022-12-26 20:50:12 jdbc[3]: 
+/**/prep6.setString(3, "Student-c0c07649-ff91-4db1-ab55-21c0b0040a3300000");
+2022-12-26 20:50:12 jdbc[3]: 
+/**/prep6.setDouble(4, 70.0d);
+2022-12-26 20:50:12 jdbc[3]: 
+/**/prep6.setString(5, "");
+2022-12-26 20:50:12 jdbc[3]: 
+/**/prep6.setNull(6, 12);
+2022-12-26 20:50:12 jdbc[3]: 
+/**/prep6.setInt(7, 500);
+2022-12-26 20:50:12 jdbc[3]: 
+/**/prep6.setLong(8, 1L);
+2022-12-26 20:50:12 jdbc[3]: 
+/**/prep6.executeUpdate();
+2022-12-26 20:50:12 lock: 3 shared read lock requesting for STUDENT 
+2022-12-26 20:50:12 lock: 3 shared read lock ok STUDENT 
+2022-12-26 20:50:12 jdbc[3]: 
+/*SQL l:143 #:1*/insert into student (birth_date, created_at, fullname, graduation_score, phone, profile_picture, sat_score, id) values (?, ?, ?, ?, ?, ?, ?, ?) {1: TIMESTAMP '1979-08-18 00:00:00', 2: TIMESTAMP '2022-12-26 20:50:12.398', 3: 'Student-c0c07649-ff91-4db1-ab55-21c0b0040a3300000', 4: 70.0, 5: '', 6: NULL, 7: 500, 8: 1};
+2022-12-26 20:50:12 jdbc[3]: 
+/**/prep6.getMaxRows();
+2022-12-26 20:50:12 jdbc[3]: 
+/**/prep6.getQueryTimeout();
+2022-12-26 20:50:12 jdbc[3]: 
+/**/prep6.close();
+2022-12-26 20:50:12 jdbc[3]: 
+/**/conn1.commit();
+2022-12-26 20:50:12 lock: 3 shared read lock unlock STUDENT 
+2022-12-26 20:50:12 jdbc[3]: 
+/*SQL t:1*/COMMIT;
+2022-12-26 20:50:12 jdbc[3]: 
+/**/conn1.setAutoCommit(true);
+2022-12-26 20:50:12 jdbc[3]: 
+/**/conn1.commit();
+2022-12-26 20:50:12 jdbc[3]: 
+/*SQL */COMMIT;
+2022-12-26 20:50:12 jdbc[3]: 
+/**/conn1.getWarnings();
+2022-12-26 20:50:12 jdbc[3]: 
+/**/conn1.clearWarnings();
+2022-12-26 20:50:12 jdbc[3]: 
+/**/conn1.clearWarnings();
+2022-12-26 20:50:12 jdbc[3]: 
+/**/conn1.getAutoCommit();
+2022-12-26 20:50:12 jdbc[3]: 
+/**/conn1.setAutoCommit(false);
+Hibernate: call next value for hibernate_sequence
+2022-12-26 20:50:12 jdbc[3]: 
+/**/PreparedStatement prep7 = conn1.prepareStatement("call next value for hibernate_sequence");
+2022-12-26 20:50:12 jdbc[3]: 
+/**/ResultSet rs18 = prep7.executeQuery();
+2022-12-26 20:50:12 jdbc[3]: 
+/*SQL #:1*/call next value for hibernate_sequence;
+2022-12-26 20:50:12 jdbc[3]: 
+/**/rs18.next();
+2022-12-26 20:50:12 jdbc[3]: 
+/**/rs18.getLong(1);
+2022-12-26 20:50:12 jdbc[3]: 
+/**/rs18.wasNull();
+2022-12-26 20:50:12 jdbc[3]: 
+/**/rs18.close();
+2022-12-26 20:50:12 jdbc[3]: 
+/**/prep7.getMaxRows();
+2022-12-26 20:50:12 jdbc[3]: 
+/**/prep7.getQueryTimeout();
+2022-12-26 20:50:12 jdbc[3]: 
+/**/prep7.close();
+Hibernate: insert into student (birth_date, created_at, fullname, graduation_score, phone, profile_picture, sat_score, id) values (?, ?, ?, ?, ?, ?, ?, ?)
+2022-12-26 20:50:12 jdbc[3]: 
+/**/PreparedStatement prep8 = conn1.prepareStatement("insert into student (birth_date, created_at, fullname, graduation_score, phone, profile_picture, sat_score, id) values (?, ?, ?, ?, ?, ?, ?, ?)");
+2022-12-26 20:50:12 jdbc[3]: 
+/**/prep8.setTimestamp(1, Timestamp.valueOf("1979-08-18 00:00:00.0"));
+2022-12-26 20:50:12 jdbc[3]: 
+/**/prep8.setTimestamp(2, Timestamp.valueOf("2022-12-26 20:50:12.515"));
+2022-12-26 20:50:12 jdbc[3]: 
+/**/prep8.setString(3, "Student-c0c07649-ff91-4db1-ab55-21c0b0040a3300001");
+2022-12-26 20:50:12 jdbc[3]: 
+/**/prep8.setDouble(4, 72.0d);
+2022-12-26 20:50:12 jdbc[3]: 
+/**/prep8.setString(5, "0525236451");
+2022-12-26 20:50:12 jdbc[3]: 
+/**/prep8.setNull(6, 12);
+2022-12-26 20:50:12 jdbc[3]: 
+/**/prep8.setInt(7, 520);
+2022-12-26 20:50:12 jdbc[3]: 
+/**/prep8.setLong(8, 2L);
+2022-12-26 20:50:12 jdbc[3]: 
+/**/prep8.executeUpdate();
+2022-12-26 20:50:12 lock: 3 shared read lock requesting for STUDENT 
+2022-12-26 20:50:12 lock: 3 shared read lock ok STUDENT 
+2022-12-26 20:50:12 jdbc[3]: 
+/*SQL l:143 #:1*/insert into student (birth_date, created_at, fullname, graduation_score, phone, profile_picture, sat_score, id) values (?, ?, ?, ?, ?, ?, ?, ?) {1: TIMESTAMP '1979-08-18 00:00:00', 2: TIMESTAMP '2022-12-26 20:50:12.515', 3: 'Student-c0c07649-ff91-4db1-ab55-21c0b0040a3300001', 4: 72.0, 5: '0525236451', 6: NULL, 7: 520, 8: 2};
+2022-12-26 20:50:12 jdbc[3]: 
+/**/prep8.getMaxRows();
+2022-12-26 20:50:12 jdbc[3]: 
+/**/prep8.getQueryTimeout();
+2022-12-26 20:50:12 jdbc[3]: 
+/**/prep8.close();
+2022-12-26 20:50:12 jdbc[3]: 
+/**/conn1.commit();
+2022-12-26 20:50:12 lock: 3 shared read lock unlock STUDENT 
+2022-12-26 20:50:12 jdbc[3]: 
+/*SQL */COMMIT;
+2022-12-26 20:50:12 jdbc[3]: 
+/**/conn1.setAutoCommit(true);
+2022-12-26 20:50:12 jdbc[3]: 
+/**/conn1.commit();
+2022-12-26 20:50:12 jdbc[3]: 
+/*SQL */COMMIT;
+2022-12-26 20:50:12 jdbc[3]: 
+/**/conn1.getWarnings();
+2022-12-26 20:50:12 jdbc[3]: 
+/**/conn1.clearWarnings();
+2022-12-26 20:50:12 jdbc[3]: 
+/**/conn1.clearWarnings();
+2022-12-26 20:50:12 jdbc[3]: 
+/**/conn1.getAutoCommit();
+2022-12-26 20:50:12 jdbc[3]: 
+/**/conn1.setAutoCommit(false);
+Hibernate: call next value for hibernate_sequence
+2022-12-26 20:50:12 jdbc[3]: 
+/**/PreparedStatement prep9 = conn1.prepareStatement("call next value for hibernate_sequence");
+2022-12-26 20:50:12 jdbc[3]: 
+/**/ResultSet rs19 = prep9.executeQuery();
+2022-12-26 20:50:12 jdbc[3]: 
+/*SQL #:1*/call next value for hibernate_sequence;
+2022-12-26 20:50:12 jdbc[3]: 
+/**/rs19.next();
+2022-12-26 20:50:12 jdbc[3]: 
+/**/rs19.getLong(1);
+2022-12-26 20:50:12 jdbc[3]: 
+/**/rs19.wasNull();
+2022-12-26 20:50:12 jdbc[3]: 
+/**/rs19.close();
+2022-12-26 20:50:12 jdbc[3]: 
+/**/prep9.getMaxRows();
+2022-12-26 20:50:12 jdbc[3]: 
+/**/prep9.getQueryTimeout();
+2022-12-26 20:50:12 jdbc[3]: 
+/**/prep9.close();
+Hibernate: insert into student (birth_date, created_at, fullname, graduation_score, phone, profile_picture, sat_score, id) values (?, ?, ?, ?, ?, ?, ?, ?)
+2022-12-26 20:50:12 jdbc[3]: 
+/**/PreparedStatement prep10 = conn1.prepareStatement("insert into student (birth_date, created_at, fullname, graduation_score, phone, profile_picture, sat_score, id) values (?, ?, ?, ?, ?, ?, ?, ?)");
+2022-12-26 20:50:12 jdbc[3]: 
+/**/prep10.setTimestamp(1, Timestamp.valueOf("1979-08-18 00:00:00.0"));
+2022-12-26 20:50:12 jdbc[3]: 
+/**/prep10.setTimestamp(2, Timestamp.valueOf("2022-12-26 20:50:12.521"));
+2022-12-26 20:50:12 jdbc[3]: 
+/**/prep10.setString(3, "Student-c0c07649-ff91-4db1-ab55-21c0b0040a3300002");
+2022-12-26 20:50:12 jdbc[3]: 
+/**/prep10.setDouble(4, 74.0d);
+2022-12-26 20:50:12 jdbc[3]: 
+/**/prep10.setString(5, "");
+2022-12-26 20:50:12 jdbc[3]: 
+/**/prep10.setNull(6, 12);
+2022-12-26 20:50:12 jdbc[3]: 
+/**/prep10.setInt(7, 540);
+2022-12-26 20:50:12 jdbc[3]: 
+/**/prep10.setLong(8, 3L);
+2022-12-26 20:50:12 jdbc[3]: 
+/**/prep10.executeUpdate();
+2022-12-26 20:50:12 lock: 3 shared read lock requesting for STUDENT 
+2022-12-26 20:50:12 lock: 3 shared read lock ok STUDENT 
+2022-12-26 20:50:12 jdbc[3]: 
+/*SQL l:143 #:1*/insert into student (birth_date, created_at, fullname, graduation_score, phone, profile_picture, sat_score, id) values (?, ?, ?, ?, ?, ?, ?, ?) {1: TIMESTAMP '1979-08-18 00:00:00', 2: TIMESTAMP '2022-12-26 20:50:12.521', 3: 'Student-c0c07649-ff91-4db1-ab55-21c0b0040a3300002', 4: 74.0, 5: '', 6: NULL, 7: 540, 8: 3};
+2022-12-26 20:50:12 jdbc[3]: 
+/**/prep10.getMaxRows();
+2022-12-26 20:50:12 jdbc[3]: 
+/**/prep10.getQueryTimeout();
+2022-12-26 20:50:12 jdbc[3]: 
+/**/prep10.close();
+2022-12-26 20:50:12 jdbc[3]: 
+/**/conn1.commit();
+2022-12-26 20:50:12 lock: 3 shared read lock unlock STUDENT 
+2022-12-26 20:50:12 jdbc[3]: 
+/*SQL */COMMIT;
+2022-12-26 20:50:12 jdbc[3]: 
+/**/conn1.setAutoCommit(true);
+2022-12-26 20:50:12 jdbc[3]: 
+/**/conn1.commit();
+2022-12-26 20:50:12 jdbc[3]: 
+/*SQL */COMMIT;
+2022-12-26 20:50:12 jdbc[3]: 
+/**/conn1.getWarnings();
+2022-12-26 20:50:12 jdbc[3]: 
+/**/conn1.clearWarnings();
+2022-12-26 20:50:12 jdbc[3]: 
+/**/conn1.clearWarnings();
+2022-12-26 20:50:12 jdbc[3]: 
+/**/conn1.getAutoCommit();
+2022-12-26 20:50:12 jdbc[3]: 
+/**/conn1.setAutoCommit(false);
+Hibernate: call next value for hibernate_sequence
+2022-12-26 20:50:12 jdbc[3]: 
+/**/PreparedStatement prep11 = conn1.prepareStatement("call next value for hibernate_sequence");
+2022-12-26 20:50:12 jdbc[3]: 
+/**/ResultSet rs20 = prep11.executeQuery();
+2022-12-26 20:50:12 jdbc[3]: 
+/*SQL #:1*/call next value for hibernate_sequence;
+2022-12-26 20:50:12 jdbc[3]: 
+/**/rs20.next();
+2022-12-26 20:50:12 jdbc[3]: 
+/**/rs20.getLong(1);
+2022-12-26 20:50:12 jdbc[3]: 
+/**/rs20.wasNull();
+2022-12-26 20:50:12 jdbc[3]: 
+/**/rs20.close();
+2022-12-26 20:50:12 jdbc[3]: 
+/**/prep11.getMaxRows();
+2022-12-26 20:50:12 jdbc[3]: 
+/**/prep11.getQueryTimeout();
+2022-12-26 20:50:12 jdbc[3]: 
+/**/prep11.close();
+Hibernate: insert into student (birth_date, created_at, fullname, graduation_score, phone, profile_picture, sat_score, id) values (?, ?, ?, ?, ?, ?, ?, ?)
+2022-12-26 20:50:12 jdbc[3]: 
+/**/PreparedStatement prep12 = conn1.prepareStatement("insert into student (birth_date, created_at, fullname, graduation_score, phone, profile_picture, sat_score, id) values (?, ?, ?, ?, ?, ?, ?, ?)");
+2022-12-26 20:50:12 jdbc[3]: 
+/**/prep12.setTimestamp(1, Timestamp.valueOf("1979-08-18 00:00:00.0"));
+2022-12-26 20:50:12 jdbc[3]: 
+/**/prep12.setTimestamp(2, Timestamp.valueOf("2022-12-26 20:50:12.527"));
+2022-12-26 20:50:12 jdbc[3]: 
+/**/prep12.setString(3, "Student-c0c07649-ff91-4db1-ab55-21c0b0040a3300003");
+2022-12-26 20:50:12 jdbc[3]: 
+/**/prep12.setDouble(4, 76.0d);
+2022-12-26 20:50:12 jdbc[3]: 
+/**/prep12.setString(5, "0525236453");
+2022-12-26 20:50:12 jdbc[3]: 
+/**/prep12.setNull(6, 12);
+2022-12-26 20:50:12 jdbc[3]: 
+/**/prep12.setInt(7, 560);
+2022-12-26 20:50:12 jdbc[3]: 
+/**/prep12.setLong(8, 4L);
+2022-12-26 20:50:12 jdbc[3]: 
+/**/prep12.executeUpdate();
+2022-12-26 20:50:12 lock: 3 shared read lock requesting for STUDENT 
+2022-12-26 20:50:12 lock: 3 shared read lock ok STUDENT 
+2022-12-26 20:50:12 jdbc[3]: 
+/*SQL l:143 #:1*/insert into student (birth_date, created_at, fullname, graduation_score, phone, profile_picture, sat_score, id) values (?, ?, ?, ?, ?, ?, ?, ?) {1: TIMESTAMP '1979-08-18 00:00:00', 2: TIMESTAMP '2022-12-26 20:50:12.527', 3: 'Student-c0c07649-ff91-4db1-ab55-21c0b0040a3300003', 4: 76.0, 5: '0525236453', 6: NULL, 7: 560, 8: 4};
+2022-12-26 20:50:12 jdbc[3]: 
+/**/prep12.getMaxRows();
+2022-12-26 20:50:12 jdbc[3]: 
+/**/prep12.getQueryTimeout();
+2022-12-26 20:50:12 jdbc[3]: 
+/**/prep12.close();
+2022-12-26 20:50:12 jdbc[3]: 
+/**/conn1.commit();
+2022-12-26 20:50:12 lock: 3 shared read lock unlock STUDENT 
+2022-12-26 20:50:12 jdbc[3]: 
+/*SQL */COMMIT;
+2022-12-26 20:50:12 jdbc[3]: 
+/**/conn1.setAutoCommit(true);
+2022-12-26 20:50:12 jdbc[3]: 
+/**/conn1.commit();
+2022-12-26 20:50:12 jdbc[3]: 
+/*SQL */COMMIT;
+2022-12-26 20:50:12 jdbc[3]: 
+/**/conn1.getWarnings();
+2022-12-26 20:50:12 jdbc[3]: 
+/**/conn1.clearWarnings();
+2022-12-26 20:50:12 jdbc[3]: 
+/**/conn1.clearWarnings();
+2022-12-26 20:50:12 jdbc[3]: 
+/**/conn1.getAutoCommit();
+2022-12-26 20:50:12 jdbc[3]: 
+/**/conn1.setAutoCommit(false);
+Hibernate: call next value for hibernate_sequence
+2022-12-26 20:50:12 jdbc[3]: 
+/**/PreparedStatement prep13 = conn1.prepareStatement("call next value for hibernate_sequence");
+2022-12-26 20:50:12 jdbc[3]: 
+/**/ResultSet rs21 = prep13.executeQuery();
+2022-12-26 20:50:12 jdbc[3]: 
+/*SQL #:1*/call next value for hibernate_sequence;
+2022-12-26 20:50:12 jdbc[3]: 
+/**/rs21.next();
+2022-12-26 20:50:12 jdbc[3]: 
+/**/rs21.getLong(1);
+2022-12-26 20:50:12 jdbc[3]: 
+/**/rs21.wasNull();
+2022-12-26 20:50:12 jdbc[3]: 
+/**/rs21.close();
+2022-12-26 20:50:12 jdbc[3]: 
+/**/prep13.getMaxRows();
+2022-12-26 20:50:12 jdbc[3]: 
+/**/prep13.getQueryTimeout();
+2022-12-26 20:50:12 jdbc[3]: 
+/**/prep13.close();
+Hibernate: insert into student (birth_date, created_at, fullname, graduation_score, phone, profile_picture, sat_score, id) values (?, ?, ?, ?, ?, ?, ?, ?)
+2022-12-26 20:50:12 jdbc[3]: 
+/**/PreparedStatement prep14 = conn1.prepareStatement("insert into student (birth_date, created_at, fullname, graduation_score, phone, profile_picture, sat_score, id) values (?, ?, ?, ?, ?, ?, ?, ?)");
+2022-12-26 20:50:12 jdbc[3]: 
+/**/prep14.setTimestamp(1, Timestamp.valueOf("1979-08-18 00:00:00.0"));
+2022-12-26 20:50:12 jdbc[3]: 
+/**/prep14.setTimestamp(2, Timestamp.valueOf("2022-12-26 20:50:12.534"));
+2022-12-26 20:50:12 jdbc[3]: 
+/**/prep14.setString(3, "Student-c0c07649-ff91-4db1-ab55-21c0b0040a3300004");
+2022-12-26 20:50:12 jdbc[3]: 
+/**/prep14.setDouble(4, 78.0d);
+2022-12-26 20:50:12 jdbc[3]: 
+/**/prep14.setString(5, "");
+2022-12-26 20:50:12 jdbc[3]: 
+/**/prep14.setNull(6, 12);
+2022-12-26 20:50:12 jdbc[3]: 
+/**/prep14.setInt(7, 580);
+2022-12-26 20:50:12 jdbc[3]: 
+/**/prep14.setLong(8, 5L);
+2022-12-26 20:50:12 jdbc[3]: 
+/**/prep14.executeUpdate();
+2022-12-26 20:50:12 lock: 3 shared read lock requesting for STUDENT 
+2022-12-26 20:50:12 lock: 3 shared read lock ok STUDENT 
+2022-12-26 20:50:12 jdbc[3]: 
+/*SQL l:143 #:1*/insert into student (birth_date, created_at, fullname, graduation_score, phone, profile_picture, sat_score, id) values (?, ?, ?, ?, ?, ?, ?, ?) {1: TIMESTAMP '1979-08-18 00:00:00', 2: TIMESTAMP '2022-12-26 20:50:12.534', 3: 'Student-c0c07649-ff91-4db1-ab55-21c0b0040a3300004', 4: 78.0, 5: '', 6: NULL, 7: 580, 8: 5};
+2022-12-26 20:50:12 jdbc[3]: 
+/**/prep14.getMaxRows();
+2022-12-26 20:50:12 jdbc[3]: 
+/**/prep14.getQueryTimeout();
+2022-12-26 20:50:12 jdbc[3]: 
+/**/prep14.close();
+2022-12-26 20:50:12 jdbc[3]: 
+/**/conn1.commit();
+2022-12-26 20:50:12 lock: 3 shared read lock unlock STUDENT 
+2022-12-26 20:50:12 jdbc[3]: 
+/*SQL */COMMIT;
+2022-12-26 20:50:12 jdbc[3]: 
+/**/conn1.setAutoCommit(true);
+2022-12-26 20:50:12 jdbc[3]: 
+/**/conn1.commit();
+2022-12-26 20:50:12 jdbc[3]: 
+/*SQL */COMMIT;
+2022-12-26 20:50:12 jdbc[3]: 
+/**/conn1.getWarnings();
+2022-12-26 20:50:12 jdbc[3]: 
+/**/conn1.clearWarnings();
+2022-12-26 20:50:12 jdbc[3]: 
+/**/conn1.clearWarnings();
+2022-12-26 20:50:12 jdbc[3]: 
+/**/conn1.getAutoCommit();
+2022-12-26 20:50:12 jdbc[3]: 
+/**/conn1.setAutoCommit(false);
+Hibernate: call next value for hibernate_sequence
+2022-12-26 20:50:12 jdbc[3]: 
+/**/PreparedStatement prep15 = conn1.prepareStatement("call next value for hibernate_sequence");
+2022-12-26 20:50:12 jdbc[3]: 
+/**/ResultSet rs22 = prep15.executeQuery();
+2022-12-26 20:50:12 jdbc[3]: 
+/*SQL #:1*/call next value for hibernate_sequence;
+2022-12-26 20:50:12 jdbc[3]: 
+/**/rs22.next();
+2022-12-26 20:50:12 jdbc[3]: 
+/**/rs22.getLong(1);
+2022-12-26 20:50:12 jdbc[3]: 
+/**/rs22.wasNull();
+2022-12-26 20:50:12 jdbc[3]: 
+/**/rs22.close();
+2022-12-26 20:50:12 jdbc[3]: 
+/**/prep15.getMaxRows();
+2022-12-26 20:50:12 jdbc[3]: 
+/**/prep15.getQueryTimeout();
+2022-12-26 20:50:12 jdbc[3]: 
+/**/prep15.close();
+Hibernate: insert into student (birth_date, created_at, fullname, graduation_score, phone, profile_picture, sat_score, id) values (?, ?, ?, ?, ?, ?, ?, ?)
+2022-12-26 20:50:12 jdbc[3]: 
+/**/PreparedStatement prep16 = conn1.prepareStatement("insert into student (birth_date, created_at, fullname, graduation_score, phone, profile_picture, sat_score, id) values (?, ?, ?, ?, ?, ?, ?, ?)");
+2022-12-26 20:50:12 jdbc[3]: 
+/**/prep16.setTimestamp(1, Timestamp.valueOf("1979-08-18 00:00:00.0"));
+2022-12-26 20:50:12 jdbc[3]: 
+/**/prep16.setTimestamp(2, Timestamp.valueOf("2022-12-26 20:50:12.537"));
+2022-12-26 20:50:12 jdbc[3]: 
+/**/prep16.setString(3, "Student-c0c07649-ff91-4db1-ab55-21c0b0040a3300005");
+2022-12-26 20:50:12 jdbc[3]: 
+/**/prep16.setDouble(4, 80.0d);
+2022-12-26 20:50:12 jdbc[3]: 
+/**/prep16.setString(5, "0525236455");
+2022-12-26 20:50:12 jdbc[3]: 
+/**/prep16.setNull(6, 12);
+2022-12-26 20:50:12 jdbc[3]: 
+/**/prep16.setInt(7, 600);
+2022-12-26 20:50:12 jdbc[3]: 
+/**/prep16.setLong(8, 6L);
+2022-12-26 20:50:12 jdbc[3]: 
+/**/prep16.executeUpdate();
+2022-12-26 20:50:12 lock: 3 shared read lock requesting for STUDENT 
+2022-12-26 20:50:12 lock: 3 shared read lock ok STUDENT 
+2022-12-26 20:50:12 jdbc[3]: 
+/*SQL l:143 #:1*/insert into student (birth_date, created_at, fullname, graduation_score, phone, profile_picture, sat_score, id) values (?, ?, ?, ?, ?, ?, ?, ?) {1: TIMESTAMP '1979-08-18 00:00:00', 2: TIMESTAMP '2022-12-26 20:50:12.537', 3: 'Student-c0c07649-ff91-4db1-ab55-21c0b0040a3300005', 4: 80.0, 5: '0525236455', 6: NULL, 7: 600, 8: 6};
+2022-12-26 20:50:12 jdbc[3]: 
+/**/prep16.getMaxRows();
+2022-12-26 20:50:12 jdbc[3]: 
+/**/prep16.getQueryTimeout();
+2022-12-26 20:50:12 jdbc[3]: 
+/**/prep16.close();
+2022-12-26 20:50:12 jdbc[3]: 
+/**/conn1.commit();
+2022-12-26 20:50:12 lock: 3 shared read lock unlock STUDENT 
+2022-12-26 20:50:12 jdbc[3]: 
+/*SQL */COMMIT;
+2022-12-26 20:50:12 jdbc[3]: 
+/**/conn1.setAutoCommit(true);
+2022-12-26 20:50:12 jdbc[3]: 
+/**/conn1.commit();
+2022-12-26 20:50:12 jdbc[3]: 
+/*SQL */COMMIT;
+2022-12-26 20:50:12 jdbc[3]: 
+/**/conn1.getWarnings();
+2022-12-26 20:50:12 jdbc[3]: 
+/**/conn1.clearWarnings();
+2022-12-26 20:50:12 jdbc[3]: 
+/**/conn1.clearWarnings();
+2022-12-26 20:50:12 jdbc[3]: 
+/**/conn1.getAutoCommit();
+2022-12-26 20:50:12 jdbc[3]: 
+/**/conn1.setAutoCommit(false);
+Hibernate: call next value for hibernate_sequence
+2022-12-26 20:50:12 jdbc[3]: 
+/**/PreparedStatement prep17 = conn1.prepareStatement("call next value for hibernate_sequence");
+2022-12-26 20:50:12 jdbc[3]: 
+/**/ResultSet rs23 = prep17.executeQuery();
+2022-12-26 20:50:12 jdbc[3]: 
+/*SQL #:1*/call next value for hibernate_sequence;
+2022-12-26 20:50:12 jdbc[3]: 
+/**/rs23.next();
+2022-12-26 20:50:12 jdbc[3]: 
+/**/rs23.getLong(1);
+2022-12-26 20:50:12 jdbc[3]: 
+/**/rs23.wasNull();
+2022-12-26 20:50:12 jdbc[3]: 
+/**/rs23.close();
+2022-12-26 20:50:12 jdbc[3]: 
+/**/prep17.getMaxRows();
+2022-12-26 20:50:12 jdbc[3]: 
+/**/prep17.getQueryTimeout();
+2022-12-26 20:50:12 jdbc[3]: 
+/**/prep17.close();
+Hibernate: insert into student (birth_date, created_at, fullname, graduation_score, phone, profile_picture, sat_score, id) values (?, ?, ?, ?, ?, ?, ?, ?)
+2022-12-26 20:50:12 jdbc[3]: 
+/**/PreparedStatement prep18 = conn1.prepareStatement("insert into student (birth_date, created_at, fullname, graduation_score, phone, profile_picture, sat_score, id) values (?, ?, ?, ?, ?, ?, ?, ?)");
+2022-12-26 20:50:12 jdbc[3]: 
+/**/prep18.setTimestamp(1, Timestamp.valueOf("1979-08-18 00:00:00.0"));
+2022-12-26 20:50:12 jdbc[3]: 
+/**/prep18.setTimestamp(2, Timestamp.valueOf("2022-12-26 20:50:12.541"));
+2022-12-26 20:50:12 jdbc[3]: 
+/**/prep18.setString(3, "Student-c0c07649-ff91-4db1-ab55-21c0b0040a3300006");
+2022-12-26 20:50:12 jdbc[3]: 
+/**/prep18.setDouble(4, 82.0d);
+2022-12-26 20:50:12 jdbc[3]: 
+/**/prep18.setString(5, "");
+2022-12-26 20:50:12 jdbc[3]: 
+/**/prep18.setNull(6, 12);
+2022-12-26 20:50:12 jdbc[3]: 
+/**/prep18.setInt(7, 620);
+2022-12-26 20:50:12 jdbc[3]: 
+/**/prep18.setLong(8, 7L);
+2022-12-26 20:50:12 jdbc[3]: 
+/**/prep18.executeUpdate();
+2022-12-26 20:50:12 lock: 3 shared read lock requesting for STUDENT 
+2022-12-26 20:50:12 lock: 3 shared read lock ok STUDENT 
+2022-12-26 20:50:12 jdbc[3]: 
+/*SQL l:143 #:1*/insert into student (birth_date, created_at, fullname, graduation_score, phone, profile_picture, sat_score, id) values (?, ?, ?, ?, ?, ?, ?, ?) {1: TIMESTAMP '1979-08-18 00:00:00', 2: TIMESTAMP '2022-12-26 20:50:12.541', 3: 'Student-c0c07649-ff91-4db1-ab55-21c0b0040a3300006', 4: 82.0, 5: '', 6: NULL, 7: 620, 8: 7};
+2022-12-26 20:50:12 jdbc[3]: 
+/**/prep18.getMaxRows();
+2022-12-26 20:50:12 jdbc[3]: 
+/**/prep18.getQueryTimeout();
+2022-12-26 20:50:12 jdbc[3]: 
+/**/prep18.close();
+2022-12-26 20:50:12 jdbc[3]: 
+/**/conn1.commit();
+2022-12-26 20:50:12 lock: 3 shared read lock unlock STUDENT 
+2022-12-26 20:50:12 jdbc[3]: 
+/*SQL */COMMIT;
+2022-12-26 20:50:12 jdbc[3]: 
+/**/conn1.setAutoCommit(true);
+2022-12-26 20:50:12 jdbc[3]: 
+/**/conn1.commit();
+2022-12-26 20:50:12 jdbc[3]: 
+/*SQL */COMMIT;
+2022-12-26 20:50:12 jdbc[3]: 
+/**/conn1.getWarnings();
+2022-12-26 20:50:12 jdbc[3]: 
+/**/conn1.clearWarnings();
+2022-12-26 20:50:12 jdbc[3]: 
+/**/conn1.clearWarnings();
+2022-12-26 20:50:12 jdbc[3]: 
+/**/conn1.getAutoCommit();
+2022-12-26 20:50:12 jdbc[3]: 
+/**/conn1.setAutoCommit(false);
+Hibernate: call next value for hibernate_sequence
+2022-12-26 20:50:12 jdbc[3]: 
+/**/PreparedStatement prep19 = conn1.prepareStatement("call next value for hibernate_sequence");
+2022-12-26 20:50:12 jdbc[3]: 
+/**/ResultSet rs24 = prep19.executeQuery();
+2022-12-26 20:50:12 jdbc[3]: 
+/*SQL #:1*/call next value for hibernate_sequence;
+2022-12-26 20:50:12 jdbc[3]: 
+/**/rs24.next();
+2022-12-26 20:50:12 jdbc[3]: 
+/**/rs24.getLong(1);
+2022-12-26 20:50:12 jdbc[3]: 
+/**/rs24.wasNull();
+2022-12-26 20:50:12 jdbc[3]: 
+/**/rs24.close();
+2022-12-26 20:50:12 jdbc[3]: 
+/**/prep19.getMaxRows();
+2022-12-26 20:50:12 jdbc[3]: 
+/**/prep19.getQueryTimeout();
+2022-12-26 20:50:12 jdbc[3]: 
+/**/prep19.close();
+Hibernate: insert into student (birth_date, created_at, fullname, graduation_score, phone, profile_picture, sat_score, id) values (?, ?, ?, ?, ?, ?, ?, ?)
+2022-12-26 20:50:12 jdbc[3]: 
+/**/PreparedStatement prep20 = conn1.prepareStatement("insert into student (birth_date, created_at, fullname, graduation_score, phone, profile_picture, sat_score, id) values (?, ?, ?, ?, ?, ?, ?, ?)");
+2022-12-26 20:50:12 jdbc[3]: 
+/**/prep20.setTimestamp(1, Timestamp.valueOf("1979-08-18 00:00:00.0"));
+2022-12-26 20:50:12 jdbc[3]: 
+/**/prep20.setTimestamp(2, Timestamp.valueOf("2022-12-26 20:50:12.545"));
+2022-12-26 20:50:12 jdbc[3]: 
+/**/prep20.setString(3, "Student-c0c07649-ff91-4db1-ab55-21c0b0040a3300007");
+2022-12-26 20:50:12 jdbc[3]: 
+/**/prep20.setDouble(4, 84.0d);
+2022-12-26 20:50:12 jdbc[3]: 
+/**/prep20.setString(5, "0525236457");
+2022-12-26 20:50:12 jdbc[3]: 
+/**/prep20.setNull(6, 12);
+2022-12-26 20:50:12 jdbc[3]: 
+/**/prep20.setInt(7, 640);
+2022-12-26 20:50:12 jdbc[3]: 
+/**/prep20.setLong(8, 8L);
+2022-12-26 20:50:12 jdbc[3]: 
+/**/prep20.executeUpdate();
+2022-12-26 20:50:12 lock: 3 shared read lock requesting for STUDENT 
+2022-12-26 20:50:12 lock: 3 shared read lock ok STUDENT 
+2022-12-26 20:50:12 jdbc[3]: 
+/*SQL l:143 #:1*/insert into student (birth_date, created_at, fullname, graduation_score, phone, profile_picture, sat_score, id) values (?, ?, ?, ?, ?, ?, ?, ?) {1: TIMESTAMP '1979-08-18 00:00:00', 2: TIMESTAMP '2022-12-26 20:50:12.545', 3: 'Student-c0c07649-ff91-4db1-ab55-21c0b0040a3300007', 4: 84.0, 5: '0525236457', 6: NULL, 7: 640, 8: 8};
+2022-12-26 20:50:12 jdbc[3]: 
+/**/prep20.getMaxRows();
+2022-12-26 20:50:12 jdbc[3]: 
+/**/prep20.getQueryTimeout();
+2022-12-26 20:50:12 jdbc[3]: 
+/**/prep20.close();
+2022-12-26 20:50:12 jdbc[3]: 
+/**/conn1.commit();
+2022-12-26 20:50:12 lock: 3 shared read lock unlock STUDENT 
+2022-12-26 20:50:12 jdbc[3]: 
+/*SQL */COMMIT;
+2022-12-26 20:50:12 jdbc[3]: 
+/**/conn1.setAutoCommit(true);
+2022-12-26 20:50:12 jdbc[3]: 
+/**/conn1.commit();
+2022-12-26 20:50:12 jdbc[3]: 
+/*SQL */COMMIT;
+2022-12-26 20:50:12 jdbc[3]: 
+/**/conn1.getWarnings();
+2022-12-26 20:50:12 jdbc[3]: 
+/**/conn1.clearWarnings();
+2022-12-26 20:50:12 jdbc[3]: 
+/**/conn1.clearWarnings();
+2022-12-26 20:50:12 jdbc[3]: 
+/**/conn1.getAutoCommit();
+2022-12-26 20:50:12 jdbc[3]: 
+/**/conn1.setAutoCommit(false);
+Hibernate: call next value for hibernate_sequence
+2022-12-26 20:50:12 jdbc[3]: 
+/**/PreparedStatement prep21 = conn1.prepareStatement("call next value for hibernate_sequence");
+2022-12-26 20:50:12 jdbc[3]: 
+/**/ResultSet rs25 = prep21.executeQuery();
+2022-12-26 20:50:12 jdbc[3]: 
+/*SQL #:1*/call next value for hibernate_sequence;
+2022-12-26 20:50:12 jdbc[3]: 
+/**/rs25.next();
+2022-12-26 20:50:12 jdbc[3]: 
+/**/rs25.getLong(1);
+2022-12-26 20:50:12 jdbc[3]: 
+/**/rs25.wasNull();
+2022-12-26 20:50:12 jdbc[3]: 
+/**/rs25.close();
+2022-12-26 20:50:12 jdbc[3]: 
+/**/prep21.getMaxRows();
+2022-12-26 20:50:12 jdbc[3]: 
+/**/prep21.getQueryTimeout();
+2022-12-26 20:50:12 jdbc[3]: 
+/**/prep21.close();
+Hibernate: insert into student (birth_date, created_at, fullname, graduation_score, phone, profile_picture, sat_score, id) values (?, ?, ?, ?, ?, ?, ?, ?)
+2022-12-26 20:50:12 jdbc[3]: 
+/**/PreparedStatement prep22 = conn1.prepareStatement("insert into student (birth_date, created_at, fullname, graduation_score, phone, profile_picture, sat_score, id) values (?, ?, ?, ?, ?, ?, ?, ?)");
+2022-12-26 20:50:12 jdbc[3]: 
+/**/prep22.setTimestamp(1, Timestamp.valueOf("1979-08-18 00:00:00.0"));
+2022-12-26 20:50:12 jdbc[3]: 
+/**/prep22.setTimestamp(2, Timestamp.valueOf("2022-12-26 20:50:12.55"));
+2022-12-26 20:50:12 jdbc[3]: 
+/**/prep22.setString(3, "Student-c0c07649-ff91-4db1-ab55-21c0b0040a3300008");
+2022-12-26 20:50:12 jdbc[3]: 
+/**/prep22.setDouble(4, 86.0d);
+2022-12-26 20:50:12 jdbc[3]: 
+/**/prep22.setString(5, "");
+2022-12-26 20:50:12 jdbc[3]: 
+/**/prep22.setNull(6, 12);
+2022-12-26 20:50:12 jdbc[3]: 
+/**/prep22.setInt(7, 660);
+2022-12-26 20:50:12 jdbc[3]: 
+/**/prep22.setLong(8, 9L);
+2022-12-26 20:50:12 jdbc[3]: 
+/**/prep22.executeUpdate();
+2022-12-26 20:50:12 lock: 3 shared read lock requesting for STUDENT 
+2022-12-26 20:50:12 lock: 3 shared read lock ok STUDENT 
+2022-12-26 20:50:12 jdbc[3]: 
+/*SQL l:143 #:1*/insert into student (birth_date, created_at, fullname, graduation_score, phone, profile_picture, sat_score, id) values (?, ?, ?, ?, ?, ?, ?, ?) {1: TIMESTAMP '1979-08-18 00:00:00', 2: TIMESTAMP '2022-12-26 20:50:12.55', 3: 'Student-c0c07649-ff91-4db1-ab55-21c0b0040a3300008', 4: 86.0, 5: '', 6: NULL, 7: 660, 8: 9};
+2022-12-26 20:50:12 jdbc[3]: 
+/**/prep22.getMaxRows();
+2022-12-26 20:50:12 jdbc[3]: 
+/**/prep22.getQueryTimeout();
+2022-12-26 20:50:12 jdbc[3]: 
+/**/prep22.close();
+2022-12-26 20:50:12 jdbc[3]: 
+/**/conn1.commit();
+2022-12-26 20:50:12 lock: 3 shared read lock unlock STUDENT 
+2022-12-26 20:50:12 jdbc[3]: 
+/*SQL */COMMIT;
+2022-12-26 20:50:12 jdbc[3]: 
+/**/conn1.setAutoCommit(true);
+2022-12-26 20:50:12 jdbc[3]: 
+/**/conn1.commit();
+2022-12-26 20:50:12 jdbc[3]: 
+/*SQL */COMMIT;
+2022-12-26 20:50:12 jdbc[3]: 
+/**/conn1.getWarnings();
+2022-12-26 20:50:12 jdbc[3]: 
+/**/conn1.clearWarnings();
+2022-12-26 20:50:12 jdbc[3]: 
+/**/conn1.clearWarnings();
+2022-12-26 20:50:12 jdbc[3]: 
+/**/conn1.getAutoCommit();
+2022-12-26 20:50:12 jdbc[3]: 
+/**/conn1.setAutoCommit(false);
+Hibernate: call next value for hibernate_sequence
+2022-12-26 20:50:12 jdbc[3]: 
+/**/PreparedStatement prep23 = conn1.prepareStatement("call next value for hibernate_sequence");
+2022-12-26 20:50:12 jdbc[3]: 
+/**/ResultSet rs26 = prep23.executeQuery();
+2022-12-26 20:50:12 jdbc[3]: 
+/*SQL #:1*/call next value for hibernate_sequence;
+2022-12-26 20:50:12 jdbc[3]: 
+/**/rs26.next();
+2022-12-26 20:50:12 jdbc[3]: 
+/**/rs26.getLong(1);
+2022-12-26 20:50:12 jdbc[3]: 
+/**/rs26.wasNull();
+2022-12-26 20:50:12 jdbc[3]: 
+/**/rs26.close();
+2022-12-26 20:50:12 jdbc[3]: 
+/**/prep23.getMaxRows();
+2022-12-26 20:50:12 jdbc[3]: 
+/**/prep23.getQueryTimeout();
+2022-12-26 20:50:12 jdbc[3]: 
+/**/prep23.close();
+Hibernate: insert into student (birth_date, created_at, fullname, graduation_score, phone, profile_picture, sat_score, id) values (?, ?, ?, ?, ?, ?, ?, ?)
+2022-12-26 20:50:12 jdbc[3]: 
+/**/PreparedStatement prep24 = conn1.prepareStatement("insert into student (birth_date, created_at, fullname, graduation_score, phone, profile_picture, sat_score, id) values (?, ?, ?, ?, ?, ?, ?, ?)");
+2022-12-26 20:50:12 jdbc[3]: 
+/**/prep24.setTimestamp(1, Timestamp.valueOf("1979-08-18 00:00:00.0"));
+2022-12-26 20:50:12 jdbc[3]: 
+/**/prep24.setTimestamp(2, Timestamp.valueOf("2022-12-26 20:50:12.554"));
+2022-12-26 20:50:12 jdbc[3]: 
+/**/prep24.setString(3, "Student-c0c07649-ff91-4db1-ab55-21c0b0040a3300009");
+2022-12-26 20:50:12 jdbc[3]: 
+/**/prep24.setDouble(4, 88.0d);
+2022-12-26 20:50:12 jdbc[3]: 
+/**/prep24.setString(5, "0525236459");
+2022-12-26 20:50:12 jdbc[3]: 
+/**/prep24.setNull(6, 12);
+2022-12-26 20:50:12 jdbc[3]: 
+/**/prep24.setInt(7, 680);
+2022-12-26 20:50:12 jdbc[3]: 
+/**/prep24.setLong(8, 10L);
+2022-12-26 20:50:12 jdbc[3]: 
+/**/prep24.executeUpdate();
+2022-12-26 20:50:12 lock: 3 shared read lock requesting for STUDENT 
+2022-12-26 20:50:12 lock: 3 shared read lock ok STUDENT 
+2022-12-26 20:50:12 jdbc[3]: 
+/*SQL l:143 #:1*/insert into student (birth_date, created_at, fullname, graduation_score, phone, profile_picture, sat_score, id) values (?, ?, ?, ?, ?, ?, ?, ?) {1: TIMESTAMP '1979-08-18 00:00:00', 2: TIMESTAMP '2022-12-26 20:50:12.554', 3: 'Student-c0c07649-ff91-4db1-ab55-21c0b0040a3300009', 4: 88.0, 5: '0525236459', 6: NULL, 7: 680, 8: 10};
+2022-12-26 20:50:12 jdbc[3]: 
+/**/prep24.getMaxRows();
+2022-12-26 20:50:12 jdbc[3]: 
+/**/prep24.getQueryTimeout();
+2022-12-26 20:50:12 jdbc[3]: 
+/**/prep24.close();
+2022-12-26 20:50:12 jdbc[3]: 
+/**/conn1.commit();
+2022-12-26 20:50:12 lock: 3 shared read lock unlock STUDENT 
+2022-12-26 20:50:12 jdbc[3]: 
+/*SQL */COMMIT;
+2022-12-26 20:50:12 jdbc[3]: 
+/**/conn1.setAutoCommit(true);
+2022-12-26 20:50:12 jdbc[3]: 
+/**/conn1.commit();
+2022-12-26 20:50:12 jdbc[3]: 
+/*SQL */COMMIT;
+2022-12-26 20:50:12 jdbc[3]: 
+/**/conn1.getWarnings();
+2022-12-26 20:50:12 jdbc[3]: 
+/**/conn1.clearWarnings();
+2022-12-26 20:50:12 jdbc[3]: 
+/**/conn1.clearWarnings();
+2022-12-26 20:50:12 jdbc[3]: 
+/**/conn1.setReadOnly(true);
+2022-12-26 20:50:12 jdbc[3]: 
+/**/conn1.getAutoCommit();
+2022-12-26 20:50:12 jdbc[3]: 
+/**/conn1.setAutoCommit(false);
+Hibernate: select student0_.id as id1_0_, student0_.birth_date as birth_da2_0_, student0_.created_at as created_3_0_, student0_.fullname as fullname4_0_, student0_.graduation_score as graduati5_0_, student0_.phone as phone6_0_, student0_.profile_picture as profile_7_0_, student0_.sat_score as sat_scor8_0_ from student student0_
+2022-12-26 20:50:12 jdbc[3]: 
+/**/PreparedStatement prep25 = conn1.prepareStatement("select student0_.id as id1_0_, student0_.birth_date as birth_da2_0_, student0_.created_at as created_3_0_, student0_.fullname as fullname4_0_, student0_.graduation_score as graduati5_0_, student0_.phone as phone6_0_, student0_.profile_picture as profile_7_0_, student0_.sat_score as sat_scor8_0_ from student student0_");
+2022-12-26 20:50:12 jdbc[3]: Plan       : calculate cost for plan [STUDENT0_]
+2022-12-26 20:50:12 jdbc[3]: Plan       :   for table filter STUDENT0_
+2022-12-26 20:50:12 jdbc[3]: Table      :     potential plan item cost 10,300 index PUBLIC.STUDENT.tableScan
+2022-12-26 20:50:12 jdbc[3]: Table      :     potential plan item cost 10,310 index PUBLIC.PRIMARY_KEY_B
+2022-12-26 20:50:12 jdbc[3]: Plan       :   best plan item cost 10,300 index PUBLIC.STUDENT.tableScan
+2022-12-26 20:50:12 jdbc[3]: Plan       : plan cost 10,301
+2022-12-26 20:50:12 jdbc[3]: 
+/**/ResultSet rs27 = prep25.executeQuery();
+2022-12-26 20:50:12 jdbc[3]: 
+/*SQL #:10 t:1*/select student0_.id as id1_0_, student0_.birth_date as birth_da2_0_, student0_.created_at as created_3_0_, student0_.fullname as fullname4_0_, student0_.graduation_score as graduati5_0_, student0_.phone as phone6_0_, student0_.profile_picture as profile_7_0_, student0_.sat_score as sat_scor8_0_ from student student0_;
+2022-12-26 20:50:12 jdbc[3]: 
+/**/rs27.next();
+2022-12-26 20:50:12 jdbc[3]: 
+/**/rs27.getLong("id1_0_");
+2022-12-26 20:50:12 jdbc[3]: 
+/**/rs27.wasNull();
+2022-12-26 20:50:12 jdbc[3]: 
+/**/rs27.getTimestamp("birth_da2_0_");
+2022-12-26 20:50:12 jdbc[3]: 
+/**/rs27.wasNull();
+2022-12-26 20:50:12 jdbc[3]: 
+/**/rs27.getTimestamp("created_3_0_");
+2022-12-26 20:50:12 jdbc[3]: 
+/**/rs27.wasNull();
+2022-12-26 20:50:12 jdbc[3]: 
+/**/rs27.getString("fullname4_0_");
+2022-12-26 20:50:12 jdbc[3]: 
+/**/rs27.wasNull();
+2022-12-26 20:50:12 jdbc[3]: 
+/**/rs27.getDouble("graduati5_0_");
+2022-12-26 20:50:12 jdbc[3]: 
+/**/rs27.wasNull();
+2022-12-26 20:50:12 jdbc[3]: 
+/**/rs27.getString("phone6_0_");
+2022-12-26 20:50:12 jdbc[3]: 
+/**/rs27.wasNull();
+2022-12-26 20:50:12 jdbc[3]: 
+/**/rs27.getString("profile_7_0_");
+2022-12-26 20:50:12 jdbc[3]: 
+/**/rs27.getInt("sat_scor8_0_");
+2022-12-26 20:50:12 jdbc[3]: 
+/**/rs27.wasNull();
+2022-12-26 20:50:12 jdbc[3]: 
+/**/rs27.next();
+2022-12-26 20:50:12 jdbc[3]: 
+/**/rs27.getLong("id1_0_");
+2022-12-26 20:50:12 jdbc[3]: 
+/**/rs27.wasNull();
+2022-12-26 20:50:12 jdbc[3]: 
+/**/rs27.getTimestamp("birth_da2_0_");
+2022-12-26 20:50:12 jdbc[3]: 
+/**/rs27.wasNull();
+2022-12-26 20:50:12 jdbc[3]: 
+/**/rs27.getTimestamp("created_3_0_");
+2022-12-26 20:50:12 jdbc[3]: 
+/**/rs27.wasNull();
+2022-12-26 20:50:12 jdbc[3]: 
+/**/rs27.getString("fullname4_0_");
+2022-12-26 20:50:12 jdbc[3]: 
+/**/rs27.wasNull();
+2022-12-26 20:50:12 jdbc[3]: 
+/**/rs27.getDouble("graduati5_0_");
+2022-12-26 20:50:12 jdbc[3]: 
+/**/rs27.wasNull();
+2022-12-26 20:50:12 jdbc[3]: 
+/**/rs27.getString("phone6_0_");
+2022-12-26 20:50:12 jdbc[3]: 
+/**/rs27.wasNull();
+2022-12-26 20:50:12 jdbc[3]: 
+/**/rs27.getString("profile_7_0_");
+2022-12-26 20:50:12 jdbc[3]: 
+/**/rs27.getInt("sat_scor8_0_");
+2022-12-26 20:50:12 jdbc[3]: 
+/**/rs27.wasNull();
+2022-12-26 20:50:12 jdbc[3]: 
+/**/rs27.next();
+2022-12-26 20:50:12 jdbc[3]: 
+/**/rs27.getLong("id1_0_");
+2022-12-26 20:50:12 jdbc[3]: 
+/**/rs27.wasNull();
+2022-12-26 20:50:12 jdbc[3]: 
+/**/rs27.getTimestamp("birth_da2_0_");
+2022-12-26 20:50:12 jdbc[3]: 
+/**/rs27.wasNull();
+2022-12-26 20:50:12 jdbc[3]: 
+/**/rs27.getTimestamp("created_3_0_");
+2022-12-26 20:50:12 jdbc[3]: 
+/**/rs27.wasNull();
+2022-12-26 20:50:12 jdbc[3]: 
+/**/rs27.getString("fullname4_0_");
+2022-12-26 20:50:12 jdbc[3]: 
+/**/rs27.wasNull();
+2022-12-26 20:50:12 jdbc[3]: 
+/**/rs27.getDouble("graduati5_0_");
+2022-12-26 20:50:12 jdbc[3]: 
+/**/rs27.wasNull();
+2022-12-26 20:50:12 jdbc[3]: 
+/**/rs27.getString("phone6_0_");
+2022-12-26 20:50:12 jdbc[3]: 
+/**/rs27.wasNull();
+2022-12-26 20:50:12 jdbc[3]: 
+/**/rs27.getString("profile_7_0_");
+2022-12-26 20:50:12 jdbc[3]: 
+/**/rs27.getInt("sat_scor8_0_");
+2022-12-26 20:50:12 jdbc[3]: 
+/**/rs27.wasNull();
+2022-12-26 20:50:12 jdbc[3]: 
+/**/rs27.next();
+2022-12-26 20:50:12 jdbc[3]: 
+/**/rs27.getLong("id1_0_");
+2022-12-26 20:50:12 jdbc[3]: 
+/**/rs27.wasNull();
+2022-12-26 20:50:12 jdbc[3]: 
+/**/rs27.getTimestamp("birth_da2_0_");
+2022-12-26 20:50:12 jdbc[3]: 
+/**/rs27.wasNull();
+2022-12-26 20:50:12 jdbc[3]: 
+/**/rs27.getTimestamp("created_3_0_");
+2022-12-26 20:50:12 jdbc[3]: 
+/**/rs27.wasNull();
+2022-12-26 20:50:12 jdbc[3]: 
+/**/rs27.getString("fullname4_0_");
+2022-12-26 20:50:12 jdbc[3]: 
+/**/rs27.wasNull();
+2022-12-26 20:50:12 jdbc[3]: 
+/**/rs27.getDouble("graduati5_0_");
+2022-12-26 20:50:12 jdbc[3]: 
+/**/rs27.wasNull();
+2022-12-26 20:50:12 jdbc[3]: 
+/**/rs27.getString("phone6_0_");
+2022-12-26 20:50:12 jdbc[3]: 
+/**/rs27.wasNull();
+2022-12-26 20:50:12 jdbc[3]: 
+/**/rs27.getString("profile_7_0_");
+2022-12-26 20:50:12 jdbc[3]: 
+/**/rs27.getInt("sat_scor8_0_");
+2022-12-26 20:50:12 jdbc[3]: 
+/**/rs27.wasNull();
+2022-12-26 20:50:12 jdbc[3]: 
+/**/rs27.next();
+2022-12-26 20:50:12 jdbc[3]: 
+/**/rs27.getLong("id1_0_");
+2022-12-26 20:50:12 jdbc[3]: 
+/**/rs27.wasNull();
+2022-12-26 20:50:12 jdbc[3]: 
+/**/rs27.getTimestamp("birth_da2_0_");
+2022-12-26 20:50:12 jdbc[3]: 
+/**/rs27.wasNull();
+2022-12-26 20:50:12 jdbc[3]: 
+/**/rs27.getTimestamp("created_3_0_");
+2022-12-26 20:50:12 jdbc[3]: 
+/**/rs27.wasNull();
+2022-12-26 20:50:12 jdbc[3]: 
+/**/rs27.getString("fullname4_0_");
+2022-12-26 20:50:12 jdbc[3]: 
+/**/rs27.wasNull();
+2022-12-26 20:50:12 jdbc[3]: 
+/**/rs27.getDouble("graduati5_0_");
+2022-12-26 20:50:12 jdbc[3]: 
+/**/rs27.wasNull();
+2022-12-26 20:50:12 jdbc[3]: 
+/**/rs27.getString("phone6_0_");
+2022-12-26 20:50:12 jdbc[3]: 
+/**/rs27.wasNull();
+2022-12-26 20:50:12 jdbc[3]: 
+/**/rs27.getString("profile_7_0_");
+2022-12-26 20:50:12 jdbc[3]: 
+/**/rs27.getInt("sat_scor8_0_");
+2022-12-26 20:50:12 jdbc[3]: 
+/**/rs27.wasNull();
+2022-12-26 20:50:12 jdbc[3]: 
+/**/rs27.next();
+2022-12-26 20:50:12 jdbc[3]: 
+/**/rs27.getLong("id1_0_");
+2022-12-26 20:50:12 jdbc[3]: 
+/**/rs27.wasNull();
+2022-12-26 20:50:12 jdbc[3]: 
+/**/rs27.getTimestamp("birth_da2_0_");
+2022-12-26 20:50:12 jdbc[3]: 
+/**/rs27.wasNull();
+2022-12-26 20:50:12 jdbc[3]: 
+/**/rs27.getTimestamp("created_3_0_");
+2022-12-26 20:50:12 jdbc[3]: 
+/**/rs27.wasNull();
+2022-12-26 20:50:12 jdbc[3]: 
+/**/rs27.getString("fullname4_0_");
+2022-12-26 20:50:12 jdbc[3]: 
+/**/rs27.wasNull();
+2022-12-26 20:50:12 jdbc[3]: 
+/**/rs27.getDouble("graduati5_0_");
+2022-12-26 20:50:12 jdbc[3]: 
+/**/rs27.wasNull();
+2022-12-26 20:50:12 jdbc[3]: 
+/**/rs27.getString("phone6_0_");
+2022-12-26 20:50:12 jdbc[3]: 
+/**/rs27.wasNull();
+2022-12-26 20:50:12 jdbc[3]: 
+/**/rs27.getString("profile_7_0_");
+2022-12-26 20:50:12 jdbc[3]: 
+/**/rs27.getInt("sat_scor8_0_");
+2022-12-26 20:50:12 jdbc[3]: 
+/**/rs27.wasNull();
+2022-12-26 20:50:12 jdbc[3]: 
+/**/rs27.next();
+2022-12-26 20:50:12 jdbc[3]: 
+/**/rs27.getLong("id1_0_");
+2022-12-26 20:50:12 jdbc[3]: 
+/**/rs27.wasNull();
+2022-12-26 20:50:12 jdbc[3]: 
+/**/rs27.getTimestamp("birth_da2_0_");
+2022-12-26 20:50:12 jdbc[3]: 
+/**/rs27.wasNull();
+2022-12-26 20:50:12 jdbc[3]: 
+/**/rs27.getTimestamp("created_3_0_");
+2022-12-26 20:50:12 jdbc[3]: 
+/**/rs27.wasNull();
+2022-12-26 20:50:12 jdbc[3]: 
+/**/rs27.getString("fullname4_0_");
+2022-12-26 20:50:12 jdbc[3]: 
+/**/rs27.wasNull();
+2022-12-26 20:50:12 jdbc[3]: 
+/**/rs27.getDouble("graduati5_0_");
+2022-12-26 20:50:12 jdbc[3]: 
+/**/rs27.wasNull();
+2022-12-26 20:50:12 jdbc[3]: 
+/**/rs27.getString("phone6_0_");
+2022-12-26 20:50:12 jdbc[3]: 
+/**/rs27.wasNull();
+2022-12-26 20:50:12 jdbc[3]: 
+/**/rs27.getString("profile_7_0_");
+2022-12-26 20:50:12 jdbc[3]: 
+/**/rs27.getInt("sat_scor8_0_");
+2022-12-26 20:50:12 jdbc[3]: 
+/**/rs27.wasNull();
+2022-12-26 20:50:12 jdbc[3]: 
+/**/rs27.next();
+2022-12-26 20:50:12 jdbc[3]: 
+/**/rs27.getLong("id1_0_");
+2022-12-26 20:50:12 jdbc[3]: 
+/**/rs27.wasNull();
+2022-12-26 20:50:12 jdbc[3]: 
+/**/rs27.getTimestamp("birth_da2_0_");
+2022-12-26 20:50:12 jdbc[3]: 
+/**/rs27.wasNull();
+2022-12-26 20:50:12 jdbc[3]: 
+/**/rs27.getTimestamp("created_3_0_");
+2022-12-26 20:50:12 jdbc[3]: 
+/**/rs27.wasNull();
+2022-12-26 20:50:12 jdbc[3]: 
+/**/rs27.getString("fullname4_0_");
+2022-12-26 20:50:12 jdbc[3]: 
+/**/rs27.wasNull();
+2022-12-26 20:50:12 jdbc[3]: 
+/**/rs27.getDouble("graduati5_0_");
+2022-12-26 20:50:12 jdbc[3]: 
+/**/rs27.wasNull();
+2022-12-26 20:50:12 jdbc[3]: 
+/**/rs27.getString("phone6_0_");
+2022-12-26 20:50:12 jdbc[3]: 
+/**/rs27.wasNull();
+2022-12-26 20:50:12 jdbc[3]: 
+/**/rs27.getString("profile_7_0_");
+2022-12-26 20:50:12 jdbc[3]: 
+/**/rs27.getInt("sat_scor8_0_");
+2022-12-26 20:50:12 jdbc[3]: 
+/**/rs27.wasNull();
+2022-12-26 20:50:12 jdbc[3]: 
+/**/rs27.next();
+2022-12-26 20:50:12 jdbc[3]: 
+/**/rs27.getLong("id1_0_");
+2022-12-26 20:50:12 jdbc[3]: 
+/**/rs27.wasNull();
+2022-12-26 20:50:12 jdbc[3]: 
+/**/rs27.getTimestamp("birth_da2_0_");
+2022-12-26 20:50:12 jdbc[3]: 
+/**/rs27.wasNull();
+2022-12-26 20:50:12 jdbc[3]: 
+/**/rs27.getTimestamp("created_3_0_");
+2022-12-26 20:50:12 jdbc[3]: 
+/**/rs27.wasNull();
+2022-12-26 20:50:12 jdbc[3]: 
+/**/rs27.getString("fullname4_0_");
+2022-12-26 20:50:12 jdbc[3]: 
+/**/rs27.wasNull();
+2022-12-26 20:50:12 jdbc[3]: 
+/**/rs27.getDouble("graduati5_0_");
+2022-12-26 20:50:12 jdbc[3]: 
+/**/rs27.wasNull();
+2022-12-26 20:50:12 jdbc[3]: 
+/**/rs27.getString("phone6_0_");
+2022-12-26 20:50:12 jdbc[3]: 
+/**/rs27.wasNull();
+2022-12-26 20:50:12 jdbc[3]: 
+/**/rs27.getString("profile_7_0_");
+2022-12-26 20:50:12 jdbc[3]: 
+/**/rs27.getInt("sat_scor8_0_");
+2022-12-26 20:50:12 jdbc[3]: 
+/**/rs27.wasNull();
+2022-12-26 20:50:12 jdbc[3]: 
+/**/rs27.next();
+2022-12-26 20:50:12 jdbc[3]: 
+/**/rs27.getLong("id1_0_");
+2022-12-26 20:50:12 jdbc[3]: 
+/**/rs27.wasNull();
+2022-12-26 20:50:12 jdbc[3]: 
+/**/rs27.getTimestamp("birth_da2_0_");
+2022-12-26 20:50:12 jdbc[3]: 
+/**/rs27.wasNull();
+2022-12-26 20:50:12 jdbc[3]: 
+/**/rs27.getTimestamp("created_3_0_");
+2022-12-26 20:50:12 jdbc[3]: 
+/**/rs27.wasNull();
+2022-12-26 20:50:12 jdbc[3]: 
+/**/rs27.getString("fullname4_0_");
+2022-12-26 20:50:12 jdbc[3]: 
+/**/rs27.wasNull();
+2022-12-26 20:50:12 jdbc[3]: 
+/**/rs27.getDouble("graduati5_0_");
+2022-12-26 20:50:12 jdbc[3]: 
+/**/rs27.wasNull();
+2022-12-26 20:50:12 jdbc[3]: 
+/**/rs27.getString("phone6_0_");
+2022-12-26 20:50:12 jdbc[3]: 
+/**/rs27.wasNull();
+2022-12-26 20:50:12 jdbc[3]: 
+/**/rs27.getString("profile_7_0_");
+2022-12-26 20:50:12 jdbc[3]: 
+/**/rs27.getInt("sat_scor8_0_");
+2022-12-26 20:50:12 jdbc[3]: 
+/**/rs27.wasNull();
+2022-12-26 20:50:12 jdbc[3]: 
+/**/rs27.next();
+2022-12-26 20:50:12 jdbc[3]: 
+/**/rs27.close();
+2022-12-26 20:50:12 jdbc[3]: 
+/**/prep25.getMaxRows();
+2022-12-26 20:50:12 jdbc[3]: 
+/**/prep25.getQueryTimeout();
+2022-12-26 20:50:12 jdbc[3]: 
+/**/prep25.close();
+2022-12-26 20:50:12 jdbc[3]: 
+/**/conn1.commit();
+2022-12-26 20:50:12 jdbc[3]: 
+/*SQL */COMMIT;
+2022-12-26 20:50:12 jdbc[3]: 
+/**/conn1.setAutoCommit(true);
+2022-12-26 20:50:12 jdbc[3]: 
+/**/conn1.commit();
+2022-12-26 20:50:12 jdbc[3]: 
+/*SQL */COMMIT;
+2022-12-26 20:50:12 jdbc[3]: 
+/**/conn1.setReadOnly(false);
+2022-12-26 20:50:12 jdbc[3]: 
+/**/conn1.getWarnings();
+2022-12-26 20:50:12 jdbc[3]: 
+/**/conn1.clearWarnings();
+2022-12-26 20:50:12 jdbc[3]: 
+/**/conn1.clearWarnings();
+]]></system-out>
+  </testcase>
+  <testcase name="checkSatFromFilter" classname="com.handson.basic.StudentsControllerTest" time="0.189"/>
+  <testcase name="checkSatToFilter" classname="com.handson.basic.StudentsControllerTest" time="0.07"/>
+  <testcase name="get10Patients" classname="com.handson.basic.StudentsControllerTest" time="0.072"/>
+  <testcase name="checkPictureUpload" classname="com.handson.basic.StudentsControllerTest" time="0.054"/>
+</testsuite>
